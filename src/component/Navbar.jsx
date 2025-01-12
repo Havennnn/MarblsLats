@@ -22,11 +22,11 @@ const Navbar = () => {
               <img 
               src={assets.closeIcon} 
               alt="Close Icon" 
-              className="w-12 h-12 bg-dgray hover:cursor-pointer hover:transform hover:scale-110 transition ease-in-out duration-300"
+              className="w-12 h-12 p-2 sm:p-0 bg-dgray hover:cursor-pointer hover:transform hover:scale-110 transition ease-in-out duration-300"
                /></div>) : (<img 
               src={assets.menuIcon} 
               alt="Menu Icon" 
-              className="w-12 h-12 bg-dgray hover:cursor-pointer hover:transform hover:scale-110 transition ease-in-out duration-300" 
+              className="w-12 h-12 p-2 sm:p-0 bg-dgray hover:cursor-pointer hover:transform hover:scale-110 transition ease-in-out duration-300" 
             />)
             }
            
