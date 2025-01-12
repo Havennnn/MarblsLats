@@ -1,4 +1,3 @@
-import herobg from './herobg.png'
 import activeHomeIcon from './activeHomeIcon.svg'
 import homeIcon from './homeIcon.svg'
 import aboutIcon from './aboutIcon.svg'
@@ -12,7 +11,6 @@ import menuIcon from './menuIcon.svg'
 import closeIcon from './closeIcon.svg'
 
 export const assets = {
-    herobg,
     activeHomeIcon,
     homeIcon,
     aboutIcon,

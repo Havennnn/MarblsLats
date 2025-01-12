@@ -60,19 +60,19 @@ const Navbar = () => {
         </div>
         <div className="flex pl-3 pt-3 pb-5 rounded-bl-[1.5rem] bg-dgray element ">
           <ul className="flex gap-1 lg:gap-6 element2">
-            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-full justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
+            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.homeIcon} alt="" className='w-4' />
               <p className='text-white font-semibold'>Home</p>
             </li>
-            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-full justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
+            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.puzzleIcon} alt="" className='w-4' />
-              <p className='text-white font-semibold'>Skills</p>
+              <p className='text-white'>Skills</p>
             </li>
-            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-full justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
+            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.aboutIcon} alt="" className='w-4' />
               <p className='text-white font-semibold'>About</p>
             </li>
-            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-full justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
+            <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.projectIcon} alt="" className='w-4' />
               <p className='text-white font-semibold'>Projects</p>
             </li>

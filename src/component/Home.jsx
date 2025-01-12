@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { assets } from '../assets/asset.js';
 import cv from '../assets/MarableLatrell_Intern_Resume.pdf';
+import heroBg from '../assets/Herobg-new.json'
+import Lottie from 'lottie-react';
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false); // State to manage modal visibility
@@ -138,10 +140,13 @@ const Home = () => {
             )}
 
             {/* home hero background */}
-            <img 
-                src={assets.herobg} 
-                className="absolute object-fill right-0 top-0 bottom-0 md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block" 
-            />
+            <div className="absolute right-0 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block" > 
+                <Lottie
+                    animationData={heroBg}
+                    loop={true}
+                />
+            </div>
+            
         </div>
     );
 };
