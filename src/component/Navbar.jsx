@@ -66,7 +66,7 @@ const Navbar = () => {
             </li>
             <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.puzzleIcon} alt="" className='w-4' />
-              <p className='text-white'>Skills</p>
+              <p className='text-white font-semibold'>Skills</p>
             </li>
             <li className='flex border-2 border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-around items-center gap-2 hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.aboutIcon} alt="" className='w-4' />
