@@ -9,6 +9,8 @@ import githubIcon from './githubIcon.svg'
 import linkedinIcon from './linkedinIcon.svg'
 import menuIcon from './menuIcon.svg'
 import closeIcon from './closeIcon.svg'
+import rightIcon from './rightIcon.svg'
+import leftIcon from './leftIcon.svg'
 
 export const assets = {
     activeHomeIcon,
@@ -21,5 +23,7 @@ export const assets = {
     githubIcon,
     linkedinIcon,
     menuIcon,
-    closeIcon
+    closeIcon,
+    rightIcon,
+    leftIcon
 }

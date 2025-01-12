@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { assets } from '../assets/asset.js';
 import cv from '../assets/MarableLatrell_Intern_Resume.pdf';
-import heroBg from '../assets/Herobg-new.json'
+import heroBg from '../assets/Herobg-new2.json'
 import Lottie from 'lottie-react';
 
 const Home = () => {
@@ -29,6 +29,7 @@ const Home = () => {
     };
 
     return (
+        <div className="h-[700px] xl:h-[100vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem]">
         <div className="relative flex h-full">
             <div className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto">
                 {/* My introduction lines */}
@@ -140,13 +141,14 @@ const Home = () => {
             )}
 
             {/* home hero background */}
-            <div className="absolute right-0 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block" > 
+            <div className="absolute pt-10 right-0 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block" > 
                 <Lottie
                     animationData={heroBg}
                     loop={true}
                 />
             </div>
             
+        </div>
         </div>
     );
 };

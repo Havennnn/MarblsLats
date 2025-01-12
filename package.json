@@ -15,6 +15,7 @@
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.12.1",
     "@tailwindcss/forms": "^0.5.10",
+    "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
