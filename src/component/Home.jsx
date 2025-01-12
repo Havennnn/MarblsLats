@@ -28,7 +28,7 @@ const Home = () => {
 
     return (
         <div className="relative flex h-full">
-            <div className="relative flex w-full flex-col gap-1 px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto">
+            <div className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto">
                 {/* My introduction lines */}
                 <p className="font-bold text-gray">GOOD DAY!</p>
                 <h1 className="font-bold text-5xl text-dgray text-shadow">I'm Latrell</h1>
