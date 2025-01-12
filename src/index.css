@@ -34,7 +34,7 @@
 /* Add custom before styles */
 .element::before {
   content: "";
-  background-color: white;
+  background-color: transparent;
   height: 2.5rem; /* Adjust as needed */
   width: 2.5rem; /* Adjust as needed */
   position: absolute;
@@ -46,7 +46,7 @@
 
 .element2::before {
   content: "";
-  background-color: white;
+  background-color: transparent;
   height: 2.5rem; /* Adjust as needed */
   width: 2.5rem; /* Adjust as needed */
   position: absolute;
@@ -106,8 +106,16 @@
   box-shadow: 10px -10px 0 0 #1E1E1E;
 }
 
-.element7 {
-  box-shadow: -12px 12px 0 0 #1E1E1E;
+.element7::before {
+  content: "";
+  background-color: white;
+  height: 2.5rem; /* Adjust as needed */
+  width: 2.5rem; /* Adjust as needed */
+  position: absolute;
+  top: 0;
+  margin-left:-52px;
+  border-radius: 0 1.5rem 0 0;
+  box-shadow: 10px -10px 0 0 #1E1E1E;
 }
 
 .element8::before {
@@ -125,13 +133,14 @@
 
 .element9::before {
   content: "";
-  background-color: white;
+  background-color: transparent;
   height: 2.5rem; /* Adjust as needed */
   width: 2.5rem; /* Adjust as needed */
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: -40px;
+  margin-top: -12px;
+  margin-left: -52px;
   border-radius: 0 1.5rem 0 0;
   box-shadow: 10px -10px 0 0 #1E1E1E;
 }
