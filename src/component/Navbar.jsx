@@ -22,7 +22,7 @@ const Navbar = () => {
               <img 
               src={assets.closeIcon} 
               alt="Close Icon" 
-              className="w-12 h-12 p-2 bg-dgray hover:cursor-pointer hover:transform hover:scale-110 transition ease-in-out duration-300"
+              className="w-12 h-12 bg-dgray hover:cursor-pointer hover:transform hover:scale-110 transition ease-in-out duration-300"
                /></div>) : (<img 
               src={assets.menuIcon} 
               alt="Menu Icon" 
@@ -36,11 +36,11 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="bg-dgray text-white px-[16.5px] absolute rounded-bl-[1.5rem] right-0 top-[70px] z-20 transform transition-all duration-500 ease-in-out block lg:hidden element8">
+        <div className="bg-dgray text-white px-2 absolute rounded-bl-[1rem] right-0 top-[68px] z-20 transform transition-all duration-500 ease-in-out block lg:hidden element8">
           <ul className="flex flex-col pt-2 pb-5 gap-5">
             <li className='flex text-white justify-around items-center hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.homeIcon} alt="" className='w-6' />
-            </li>
+            </li> 
             <li className='flex text-white justify-around items-center hover:transform hover:scale-110 transition ease-in-out duration-300'>
               <img src={assets.puzzleIcon} alt="" className='w-6' />
             </li>

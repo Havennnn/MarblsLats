@@ -59,37 +59,33 @@ const Home = () => {
 
             {/* My contact link buttons */}
             <div className="absolute left-0 bottom-0 flex pr-3 py-3 bg-dgray rounded-tr-[1.5rem] element3">
-                <ul className="flex items-center justify-center gap-3 element4">
+                <ul className="flex items-center justify-center gap-2 sm:gap-3 element4">
                     <li className="flex">
                         <a href="https://github.com/Havennnn" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src={assets.githubIcon} 
                                 alt="github icon" 
-                                className="w-12 max-w-full hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out" 
+                                className="w-8 sm:w-12 max-w-full hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out" 
                             />
                         </a>
                     </li>
                     <li className="flex">
-                        <a 
-                            href="https://www.linkedin.com/in/latrell-marable-b43a37256/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                        >
+                        <a href="https://www.linkedin.com/in/latrell-marable-b43a37256/" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src={assets.linkedinIcon} 
                                 alt="linkedin icon" 
-                                className="w-14 hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out" 
+                                className="w-8 sm:w-14 hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out" 
                             />
                         </a>
                     </li>
                     <li 
                         onClick={openModal} 
-                        className="flex items-center justify-around h-12 gap-2 px-6 text-white bg-white rounded-xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"
+                        className="flex items-center justify-around h-8 sm:h-12 gap-2 px-6 text-white bg-white rounded-xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"
                     >
                         <img 
                             src={assets.mailIcon} 
                             alt="Mail Icon" 
-                            className="w-8" 
+                            className="w-6 sm:w-8" 
                         />
                         <p className="text-xl font-semibold text-dgray">
                             Contact
