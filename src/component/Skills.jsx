@@ -79,7 +79,7 @@ const Skills = () => {
         </div>
 
         <div className='relative bg-white w-full h-full rounded-tl-[1.5rem] rounded-bl-[1.5rem] rounded-br-[1.5rem] md:w-2/4 p-4'>
-            <div className='absolute right-0 top-0 pl-3 py-3 flex gap-1 bg-dgray justify-center items-center rounded-bl-[1.5rem] element9'>
+            <div className='absolute right-0 top-0 pl-3 py-3 flex gap-1 bg-dgray justify-center items-center rounded-bl-[1.5rem] element11'>
                 <img src={assets.puzzleIcon} alt='' className='w-8 h-8 mt-[-2px]'></img>
                 <h1 className='text-4xl text-white font-bold element10'>Skill</h1>
             </div>
