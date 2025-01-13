@@ -29,13 +29,13 @@ const Home = () => {
     };
 
     return (
-        <div className="h-[700px] xl:h-[100vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem]">
+        <div className="h-[700px] xl:h-[100vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem] border-5">
         <div className="relative flex h-full">
-            <div className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto">
+            <div className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto animate-fadeIn">
                 {/* My introduction lines */}
-                <p className="font-bold text-gray">GOOD DAY!</p>
+                <p className="font-bold text-gray animate-pulse">GOOD DAY!</p>
                 <h1 className="font-bold text-5xl text-dgray text-shadow">I'm Latrell</h1>
-                <p className="font-bold text-2xl text-gray">WEB DEVELOPER</p>
+                <p className="font-bold text-2xl text-gray animate-pulse">WEB DEVELOPER</p>
                 <p className="text-dgray">
                     I am a passionate and innovative web developer with a knack for creating captivating and functional websites. 
                     With a blend of creativity and technical expertise, I bring digital ideas to life and deliver seamless online experiences.
@@ -63,7 +63,7 @@ const Home = () => {
             {/* My contact link buttons */}
             <div className="absolute left-0 bottom-0 flex pr-3 py-3 bg-dgray rounded-tr-[1.5rem] element3">
                 <ul className="flex items-center justify-center gap-2 sm:gap-3 element4">
-                    <li className="flex">
+                    <li className="flex animate-fadeIn">
                         <a href="https://github.com/Havennnn" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src={assets.githubIcon} 
@@ -72,7 +72,7 @@ const Home = () => {
                             />
                         </a>
                     </li>
-                    <li className="flex">
+                    <li className="flex animate-fadeIn">
                         <a href="https://www.linkedin.com/in/latrell-marable-b43a37256/" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src={assets.linkedinIcon} 
@@ -83,7 +83,7 @@ const Home = () => {
                     </li>
                     <li 
                         onClick={openModal} 
-                        className="flex items-center justify-around h-8 sm:h-12 gap-2 px-6 text-white bg-white rounded-xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"
+                        className="flex items-center justify-around h-8 sm:h-12 gap-2 px-6 text-white bg-white rounded-xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out animate-fadeIn"
                     >
                         <img 
                             src={assets.mailIcon} 
@@ -141,7 +141,7 @@ const Home = () => {
             )}
 
             {/* home hero background */}
-            <div className="absolute pt-10 right-0 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block" > 
+            <div className="absolute pt-10 right-0 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block animate-fadeIn" > 
                 <Lottie
                     animationData={heroBg}
                     loop={true}
