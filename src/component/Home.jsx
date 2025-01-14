@@ -141,7 +141,7 @@ const Home = () => {
             )}
 
             {/* home hero background */}
-            <div className="absolute pt-10 right-0 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block animate-fadeIn" > 
+            <div className="absolute right-14 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block animate-fadeIn" > 
                 <Lottie
                     animationData={heroBg}
                     loop={true}

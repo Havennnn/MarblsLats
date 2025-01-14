@@ -3,6 +3,7 @@ import Navbar from './component/Navbar.jsx';
 import Home from './component/Home.jsx';
 import Skills from './component/Skills.jsx';
 import About from './component/About.jsx';
+import SkillsBox from './component/SkillsBox.jsx';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Home />
       <Skills />
+      <SkillsBox />
       <About />
     </div>
   );

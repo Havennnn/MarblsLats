@@ -42,11 +42,11 @@ const Skills = () => {
             </ div>
         )}
 
-            <div className="flex gap-4 mt-4 md:pb-0">
+            <div className="flex gap-4 mt-4 justify-end md:pb-0">
                 <button
                 onClick={handlePrevious}
-                className={`flex items-center justify-center p-3 bg-[#d9d9d9] text-white rounded-full shadow ${
-                    currentPage === 1 ? "opacity-20" : ""
+                className={`flex items-center justify-center p-3 bg-[#d9d9d9] text-white rounded-full shadow transition-all duration-500 ease-in-out ${
+                    currentPage === 1 ? "opacity-20" : "hover:scale-110"
                 }`}
                 disabled={currentPage === 1}
                 >
@@ -55,8 +55,8 @@ const Skills = () => {
                 
                 <button
                 onClick={handleNext}
-                className={`flex items-center justify-center p-3 bg-[#d9d9d9] text-white rounded-full shadow ${
-                    currentPage === 2 ? "opacity-20" : ""
+                className={`flex items-center justify-center p-3 bg-[#d9d9d9] text-white rounded-full shadow transition-all duration-500 ease-in-out ${
+                    currentPage === 2 ? "opacity-20" : "hover:scale-110"
                 }`}
                 disabled={currentPage === 2}
                 >
