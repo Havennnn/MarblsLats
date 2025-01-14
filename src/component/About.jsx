@@ -5,7 +5,7 @@ import Lottie from 'lottie-react'
 
 const About = () => {
   return (
-    <div className='flex flex-col md:flex-row mt-10 w-full h-full gap-5 justify-stretch'>
+    <div className='flex flex-col md:flex-row mt-10 w-full h-full gap-5'>
       {/* Left Div */}
       <div className='relative flex w-full md:w-3/6 h-full bg-white rounded-bl-[1.5rem] rounded-br-[1.5rem] rounded-tr-[1.5rem] flex-grow'>
         {/* Heading */}

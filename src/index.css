@@ -220,3 +220,29 @@
   border-radius: 0 10px 0 0;
   box-shadow: 5px -5px 0 0 #1E1E1E; /* Adjust shadow */
 }
+
+.element16::before {
+  content: "";
+  background-color: white; /* Adjust as needed */
+  height: 2rem; /* Adjust as needed */
+  width: 2rem; /* Adjust as needed */
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -31.5px;
+  border-radius: 1.5rem 0 0 0;
+  box-shadow: -8px -8px 0 0 #1E1E1E; /* Adjust shadow */
+}
+
+.element17::before {
+  content: "";
+  background-color: white; /* Adjust as needed */
+  height: 2rem; /* Adjust as needed */
+  width: 2rem; /* Adjust as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -31.5px;
+  border-radius: 0 1.5rem 0 0;
+  box-shadow: 8px -8px 0 0 #1E1E1E; /* Adjust shadow */
+}
