@@ -5,6 +5,7 @@ import Skills from './component/Skills.jsx';
 import About from './component/About.jsx';
 import SkillsBox from './component/SkillsBox.jsx';
 import Project from './component/Project.jsx';
+import Footer from './component/Footer.jsx'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <SkillsBox />
       <About />
       <Project />
+      <Footer />
     </div>
   );
 };
