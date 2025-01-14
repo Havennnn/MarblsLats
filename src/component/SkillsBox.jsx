@@ -24,7 +24,7 @@ const SkillsBox = () => {
                 </p>
             </div>
             <div className="text-dgray bg-white font-bold p-4 w-full lg:w-1/3 flex flex-col items-center justify-center rounded-[1rem] border-[1.5px] transition-all duration-500 ease-in-out shadow">
-                <div className='pt-4 pb-5 w-24'>
+                <div className='pt-3 pb-3 w-24'>
                   <Lottie
                       animationData={uiUxDes}
                       loop={true}
@@ -53,7 +53,7 @@ const SkillsBox = () => {
                 </p>
             </div>
             <div className="text-dgray bg-white font-bold pt-3 pb-4 px-4 w-full lg:w-1/3 flex flex-col items-center justify-center rounded-[1rem] border-[1.5px] transition-all duration-500 ease-in-out shadow">
-                <div className='w-24 pb-2'>
+                <div className='w-24 pt-1 pb-2'>
                 <Lottie
                       animationData={probSolv}
                       loop={true}

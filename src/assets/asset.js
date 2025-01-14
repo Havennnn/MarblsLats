@@ -11,6 +11,9 @@ import menuIcon from './menuIcon.svg'
 import closeIcon from './closeIcon.svg'
 import rightIcon from './rightIcon.svg'
 import leftIcon from './leftIcon.svg'
+import fbIcon from './fbIcon.svg'
+import igIcon from './igIcon.svg'
+import mailWIcon from './mailWIcon.svg'
 
 export const assets = {
     activeHomeIcon,
@@ -25,5 +28,8 @@ export const assets = {
     menuIcon,
     closeIcon,
     rightIcon,
-    leftIcon
+    leftIcon,
+    fbIcon,
+    igIcon,
+    mailWIcon
 }

@@ -169,3 +169,54 @@
   border-radius: 0 1.5rem 0 0;
   box-shadow: 10px -10px 0 0 #1E1E1E;
 }
+
+.element12::before {
+  content: "";
+  background-color: white;
+  height: 2.5rem; /* Adjust as needed */
+  width: 2.5rem; /* Adjust as needed */
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -40px;
+  border-radius: 1.5rem 0 0 0;
+  box-shadow: -10px -10px 0 0 #1E1E1E;
+}
+
+.element13::before {
+  content: "";
+  background-color: white; /* Adjust as needed */
+  height: 2.5rem; /* Adjust as needed */
+  width: 2.5rem; /* Adjust as needed */
+  position: absolute;
+  top: 64px; /* Adjust position */
+  left: 0;
+  border-radius: 1.5rem 0 0 0;
+  box-shadow: -10px -10px 0 0 #1E1E1E; /* Adjust shadow */
+}
+
+.element14::before {
+  content: "";
+  background-color: white; /* Adjust as needed */
+  height: 1rem; /* Adjust as needed */
+  width: 1rem; /* Adjust as needed */
+  position: absolute;
+  top: 0; /* Adjust position */
+  right: 0;
+  margin-top: -16px;
+  border-radius: 0 0 10px 0;
+  box-shadow: 5px 5px 0 0 #1E1E1E; /* Adjust shadow */
+}
+
+.element15::before {
+  content: "";
+  background-color: white; /* Adjust as needed */
+  height: 1rem; /* Adjust as needed */
+  width: 1rem; /* Adjust as needed */
+  position: absolute;
+  bottom: 0; /* Adjust position */
+  right: 0;
+  margin-bottom: -16px;
+  border-radius: 0 10px 0 0;
+  box-shadow: 5px -5px 0 0 #1E1E1E; /* Adjust shadow */
+}
