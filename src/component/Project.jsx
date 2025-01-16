@@ -28,12 +28,23 @@ const Project = () => {
               <p className='text-gray-500 text-sm mt-2'>
                 A fully functional authentication system built using the MERN stack with secure features such as email verification and password reset via a 6-digit OTP.
               </p>
-              <div className='mt-4 flex flex-wrap gap-3'>
-                <span className='text-sm bg-blue-100 text-blue-500 rounded-full px-3 py-1'>React</span>
-                <span className='text-sm bg-red-100 text-red-500 rounded-full px-3 py-1'>Node.js</span>
-                <span className='text-sm bg-orange-100 text-orange-500 rounded-full px-3 py-1'>Express.js</span>
-                <span className='text-sm bg-purple-100 text-purple-500 rounded-full px-3 py-1'>TailwindCSS</span>
-                <span className='text-sm bg-green-100 text-green-500 rounded-full px-3 py-1'>MongoDB</span>
+              <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
+                <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-react-original"></i>
+                React</span>  
+                <span className='text-sm border text-red-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-nodejs-plain"></i>
+                Node.js</span>
+                <span className='text-sm border text-orange-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-express-original"></i>  
+                Express.js</span>
+                <span className='text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-tailwindcss-plain"></i>
+                TailwindCSS
+                </span>
+                <span className='text-sm border text-green-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-mongodb-plain"></i>
+                MongoDB</span>
               </div>
             </div>
 
@@ -47,10 +58,16 @@ const Project = () => {
               <p className='text-gray-500 text-sm mt-2'>
               A modern and dynamic storytelling platform built using React, Tailwind CSS, and React Router. MythWeaver combines cutting-edge technology with creativity, integrating the Google Generative AI API for crafting immersive narratives.
               </p>
-              <div className='mt-4 flex gap-3'>
-                <span className='text-sm bg-blue-100 text-blue-500 rounded-full px-3 py-1'>React</span>
-                <span className='text-sm bg-purple-100 text-purple-500 rounded-full px-3 py-1'>TailwindCSS</span>
-                <span className='text-sm bg-yellow-100 text-yellow-500 rounded-full px-3 py-1'>Google AI</span>
+              <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
+                <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-react-original"></i>
+                React</span>
+                <span className='text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-tailwindcss-plain"></i>
+                TailwindCSS</span>
+                <span className='text-sm border text-orange-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-google-plain"></i>
+                Google AI</span>
               </div>
             </div>
 
@@ -64,10 +81,16 @@ const Project = () => {
               <p className='text-gray-500 text-sm mt-2'>
               A sleek and responsive art curation platform designed using React, Node.js, and Tailwind CSS. This website allows users to explore through a clean and modern interface.
               </p>
-              <div className='mt-4 flex flex-wrap gap-3'>
-                <span className='text-sm bg-blue-100 text-blue-500 rounded-full px-3 py-1'>React</span>
-                <span className='text-sm bg-red-100 text-red-500 rounded-full px-3 py-1'>Node.Js</span>
-                <span className='text-sm bg-purple-100 text-purple-500 rounded-full px-3 py-1'>TailwindCSS</span>
+              <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
+              <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-react-original"></i>
+                React</span>  
+                <span className='text-sm border text-red-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-nodejs-plain"></i>
+                Node.js</span>
+                <span className='text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
+                <i class="devicon-tailwindcss-plain"></i>
+                TailwindCSS</span>
               </div>
             </div>
 
