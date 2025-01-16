@@ -19,7 +19,7 @@ const Navbar = () => {
       });
     } else {
       gsap.to(menuRef.current, {
-        x: '200%',
+        x: '160%',
         duration: 0.1,
         ease: 'power4.in',
       });
@@ -32,12 +32,12 @@ const Navbar = () => {
         <h1 className="font-semibold text-3xl py-2 text-gray px-6 sm:px-14 text-shadow">
           Marbls<span className="font-semibold text-5xl text-dgray">Lats</span>
         </h1>
-        <div className="flex p-3 rounded-bl-[1.5rem] bg-dgray element5">
+        <div className="flex justify-center items-center p-3 w-16 rounded-bl-[1.5rem] bg-dgray element5 menu">
           <button onClick={toggleMenu} className="text-white2 element6">
             {isMenuOpen ? (
-              <i className="fa-solid fa-close text-white text-[40px] hover:transform hover:scale-110 transition ease-in-out duration-300 animate-fadeIn"></i>
+              <i className="fa-solid fa-close text-white text-4xl hover:transform hover:scale-110 transition ease-in-out duration-300 animate-fadeIn"></i>
             ) : (
-              <i className="fa-solid fa-bars text-white text-[40px] hover:transform hover:scale-110 transition ease-in-out duration-300 animate-fadeIn"></i>
+              <i className="fa-solid fa-bars text-white text-4xl [40px] hover:transform hover:scale-110 transition ease-in-out duration-300 animate-fadeIn"></i>
             )}
           </button>
         </div>
