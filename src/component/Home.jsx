@@ -28,7 +28,7 @@ const Home = () => {
     };
 
     return (
-        <section className="h-[700px] xl:h-[94vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem]">
+        <section className="h-[700px] xl:h-[93vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem]">
             <div className="relative flex h-full">
                 <div className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto animate-fadeIn">
                     {/* My introduction lines */}
