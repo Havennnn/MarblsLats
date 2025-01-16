@@ -120,7 +120,7 @@
   height: 2.5rem; /* Adjust as needed */
   width: 2.5rem; /* Adjust as needed */
   position: absolute;
-  top: 72px;
+  top: 65.5px;
   right: 0;
   border-radius: 0 1.5rem 0 0;
   box-shadow: 10px -10px 0 0 #1E1E1E;
@@ -266,3 +266,4 @@
   border-radius: 0 1.5rem 0 0;
   box-shadow: 8px -8px 0 0 #1E1E1E; /* Adjust shadow */
 }
+

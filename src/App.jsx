@@ -6,10 +6,11 @@ import About from './component/About.jsx';
 import SkillsBox from './component/SkillsBox.jsx';
 import Project from './component/Project.jsx';
 import Footer from './component/Footer.jsx'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
   return (
-    <div className="relative p-8 lg:p-12 bg-[#1E1E1E]">
+    <div id='home' className="relative px-8 lg:px-12 pt-6 bg-[#1E1E1E] overflow-hidden">
       <Navbar />
       <Home />
       <Skills />

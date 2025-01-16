@@ -1,13 +1,12 @@
 import React from 'react'
-import { assets } from '../assets/asset'
 
 const Project = () => {
   return (
-    <div className='relative flex flex-col md:flex-row mt-10 w-full h-full px-6 sm:px-14 pt-16 pb-10 bg-white rounded-[1.5rem] justify-center items-center'>
+    <section id='projects' className='relative flex flex-col md:flex-row mt-10 w-full h-full px-6 sm:px-14 pt-16 pb-10 bg-white rounded-[1.5rem] justify-center items-center'>
       <div className='absolute top-0 flex px-3 pb-3 bg-dgray rounded-bl-[1.5rem] rounded-br-[1.5rem] element16'>
         <div className='flex gap-3 justify-center items-center element17'>
-        <img src={assets.projectIcon} alt='' className='w-8 h-8 mt-[-2px]' />
-        <h1 className='text-4xl text-white font-bold'>PROJECTS</h1>
+        <i className="fa-solid fa-folder text-3xl text-white"></i>
+        <h1 className='text-4xl text-white font-bold'>Projects</h1>
         </div>
       </div>
 
@@ -66,7 +65,7 @@ const Project = () => {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

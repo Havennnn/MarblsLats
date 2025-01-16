@@ -1,5 +1,4 @@
 import React from 'react'
-import { assets } from '../assets/asset'
 
 const Footer = () => {
   return (
@@ -23,22 +22,22 @@ const Footer = () => {
             <ul className='flex gap-6'>
               <li>
                 <a href='https://github.com/Havennnn' target='_blank' rel='noopener noreferrer'>
-                  <img src={assets.githubIcon} alt='GitHub' className='w-8 hover:scale-110 transition duration-300' />
+                  <i className="fa-brands fa-square-github text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
                 </a>
               </li>
               <li>
                 <a href='https://www.linkedin.com/in/latrell-marable-b43a37256/' target='_blank' rel='noopener noreferrer'>
-                  <img src={assets.linkedinIcon} alt='LinkedIn' className='w-8 hover:scale-110 transition duration-300' />
+                  <i className="fa-brands fa-linkedin text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
                 </a>
               </li>
               <li>
-                <a href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer'>
-                  <img src={assets.fbIcon} alt='Instagram' className='w-8 hover:scale-110 transition duration-300' />
+                <a href='https://www.facebook.com/latrell.r.marable' target='_blank' rel='noopener noreferrer'>
+                  <i className="fa-brands fa-square-facebook text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
                 </a>
               </li>
               <li>
-                <a href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer'>
-                  <img src={assets.igIcon} alt='Instagram' className='w-8 hover:scale-110 transition duration-300' />
+                <a href='https://www.instagram.com/lancrms/' target='_blank' rel='noopener noreferrer'>
+                  <i className="fa-brands fa-square-instagram text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
                 </a>
               </li>
             </ul>

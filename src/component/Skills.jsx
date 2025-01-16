@@ -14,8 +14,8 @@ const Skills = () => {
     };
 
     return (
-    <div className='flex mt-10'>
-      <div className='flex flex-col md:flex-row items-center w-full gap-5'>
+    <section id='skills' className='flex pt-10'>
+      <div className='flex flex-col md:flex-row items-center w-full gap-10 sm:gap-5'>
         
         {/* Skill Section */}
         <div className="flex flex-col h-full w-full md:w-2/4">
@@ -44,11 +44,11 @@ const Skills = () => {
 
             <div className="flex gap-4 mt-4 justify-end md:pb-0">
                 <button
-                onClick={handlePrevious}
-                className={`flex items-center justify-center p-3 bg-[#d9d9d9] text-white rounded-full shadow transition-all duration-500 ease-in-out ${
-                    currentPage === 1 ? "opacity-20" : "hover:scale-110"
-                }`}
-                disabled={currentPage === 1}
+                  onClick={handlePrevious}
+                  className={`flex items-center justify-center p-3 bg-[#d9d9d9] text-white rounded-full shadow transition-all duration-500 ease-in-out ${
+                      currentPage === 1 ? "opacity-20" : "hover:scale-110"
+                  }`}
+                  disabled={currentPage === 1}
                 >
                 <img src={assets.leftIcon} className='w-3 h-3' />
                 </button>
@@ -66,20 +66,22 @@ const Skills = () => {
         </div>
 
         <div className='relative bg-white w-full h-full rounded-tl-[1.5rem] rounded-bl-[1.5rem] rounded-br-[1.5rem] md:w-2/4 p-4'>
-            <div className='absolute right-0 top-0 pl-3 py-3 md:py-3 flex gap-1 bg-dgray justify-center items-center rounded-bl-[1.5rem] element11'>
-                <img src={assets.puzzleIcon} alt='' className='w-8 h-8 mt-[-2px]'></img>
-                <h1 className='text-4xl text-white font-bold element10'>SKILL</h1>
+            <div className='absolute right-0 top-0 pl-3 py-3 md:py-3 flex gap-2 bg-dgray justify-center items-center rounded-bl-[1.5rem] element11'>
+                <i className="fa-solid fa-code text-3xl text-white"></i>
+                <h1 className='text-4xl text-white font-bold element10'>Skills</h1>
             </div>
             <h1 className='text-xl pt-5 md:px-2 md:pt-5 lg:pt-2 md:text-[24px] lg:text-3xl px-1 text-dgray font-bold'>What can I bring?</h1>
-            <p className='text-gray pt-2 md:pt-4 md:px-2 pb-5 px-1'>I am a passionate web developer with a solid foundation in HTML, CSS, JavaScript,  
+            <p className='text-gray pt-2 md:pt-4 md:px-2 pb-5 px-1'>
+            I am a passionate web developer with a solid foundation in HTML, CSS, JavaScript,  
             and familiarity with React, MongoDB, and Tailwind CSS. My hands-on experience includes 
             completing certifications in web development and cybersecurity, and working on team-based 
             projects where I developed strong organizational and problem-solving skills. With a commitment 
             to learning and a track record of adapting to new technologies, I am eager to contribute innovative, 
-            impactful solutions to your team while continuing to grow as a developer.</p>
+            impactful solutions to your team while continuing to grow as a developer.
+            </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

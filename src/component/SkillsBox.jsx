@@ -54,9 +54,9 @@ const SkillsBox = () => {
             </div>
             <div className="text-dgray bg-white font-bold pt-3 pb-4 px-4 w-full lg:w-1/3 flex flex-col items-center justify-center rounded-[1rem] border-[1.5px] transition-all duration-500 ease-in-out shadow">
                 <div className='w-24 pt-1 pb-2'>
-                <Lottie
-                      animationData={probSolv}
-                      loop={true}
+                  <Lottie
+                    animationData={probSolv}
+                    loop={true}
                   />
                 </div>
                 <h1 className='font-bold text-center'>
