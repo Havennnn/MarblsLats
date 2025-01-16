@@ -48,16 +48,16 @@ const Footer = () => {
             <h3 className='text-xl font-semibold mb-4'>Quick Links</h3>
             <ul>
               <li className='mb-2'>
-                <a href='#' className='hover:underline'>Home</a>
+                <a href='#home' className='hover:underline'>Home</a>
               </li>
               <li className='mb-2'>
-                <a href='#' className='hover:underline'>Skills</a>
+                <a href='#skills' className='hover:underline'>Skills</a>
               </li>
               <li className='mb-2'>
-                <a href='#' className='hover:underline'>Contact</a>
+                <a href='#contact' className='hover:underline'>Contact</a>
               </li>
               <li className='mb-2'>
-                <a href='#' className='hover:underline'>Project</a>
+                <a href='#projects' className='hover:underline'>Project</a>
               </li>
             </ul>
           </div>

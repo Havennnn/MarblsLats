@@ -49,13 +49,13 @@ const Home = () => {
                             <i className="fa-solid fa-file-arrow-down text-sm text-white"></i>
                             Resume
                         </button>
-                        <button 
+                        <a 
                             className="flex items-center justify-center w-32 gap-2 p-2 text-white bg-dgray rounded-xl shadow-xl hover:transform hover:scale-110 transition duration-300 ease-in-out"
-                            onClick={DownloadCV}
+                            href='#projects'
                         >
                             <i className="fa-solid fa-folder text-sm text-white"></i>
                             Projects
-                        </button>
+                        </a>
                     </div>
                 </div>
 

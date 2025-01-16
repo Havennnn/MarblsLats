@@ -1,9 +1,12 @@
 import React from 'react'
+import mernAuth from '../assets/mernAuth.jpg'
+import storyWeaver from '../assets/storyWeaver.jpg'
+import curatorArt from '../assets/curatorArt.jpg'
 
 const Project = () => {
   return (
     <section id='projects' className='pt-10'>
-      <div className='relative flex flex-col md:flex-row w-full h-full px-6 sm:px-14 pt-16 pb-10 bg-white rounded-[1.5rem] justify-center items-center'>
+      <div className='relative flex flex-col md:flex-row w-full h-full px-6 sm:px-14 py-10 bg-white rounded-[1.5rem] justify-center items-center'>
         <div className='absolute top-0 flex px-3 pb-3 bg-dgray rounded-bl-[1.5rem] rounded-br-[1.5rem] element16'>
           <div className='flex gap-3 justify-center items-center element17'>
           <i className="fa-solid fa-folder text-3xl text-white"></i>
@@ -17,50 +20,54 @@ const Project = () => {
             
             {/* Project Card 1 */}
             <div className='shadow-xl rounded-[1.5rem] p-6'>
-              <div className='flex justify-between items-center'>
-                <h3 className='text-xl font-semibold text-dgray'>Project Title</h3>
-                <a href='#' className='text-blue-500 hover:underline'>View Project</a>
+              <img src={mernAuth} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
+              <div className='flex justify-between items-baseline mt-2'>
+                <h3 className='text-xl font-semibold text-dgray'>Login Auth</h3>
+                <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i>View Project</a>
               </div>
-              <p className='text-gray-500 mt-2'>
-                A short description of the project, what technologies were used, and its key features. 
-                This section can summarize your project to give visitors a quick understanding.
+              <p className='text-gray-500 text-sm mt-2'>
+                A fully functional authentication system built using the MERN stack with secure features such as email verification and password reset via a 6-digit OTP.
               </p>
-              <div className='mt-4 flex gap-3'>
+              <div className='mt-4 flex flex-wrap gap-3'>
                 <span className='text-sm bg-blue-100 text-blue-500 rounded-full px-3 py-1'>React</span>
-                <span className='text-sm bg-green-100 text-green-500 rounded-full px-3 py-1'>Node.js</span>
+                <span className='text-sm bg-red-100 text-red-500 rounded-full px-3 py-1'>Node.js</span>
+                <span className='text-sm bg-orange-100 text-orange-500 rounded-full px-3 py-1'>Express.js</span>
                 <span className='text-sm bg-purple-100 text-purple-500 rounded-full px-3 py-1'>TailwindCSS</span>
+                <span className='text-sm bg-green-100 text-green-500 rounded-full px-3 py-1'>MongoDB</span>
               </div>
             </div>
 
             {/* Project Card 2 */}
             <div className='shadow-xl rounded-[1.5rem] p-6'>
-              <div className='flex justify-between items-center'>
-                <h3 className='text-xl font-semibold text-dgray'>Project Title 2</h3>
-                <a href='#' className='text-blue-500 hover:underline'>View Project</a>
+              <img src={storyWeaver} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
+              <div className='flex justify-between items-baseline mt-2'>
+                <h3 className='text-xl font-semibold text-dgray'>Myth Weaver</h3>
+                <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i> View Project</a>
               </div>
-              <p className='text-gray-500 mt-2'>
-                A brief summary of the second project. Discuss its purpose, technologies, and features.
+              <p className='text-gray-500 text-sm mt-2'>
+              A modern and dynamic storytelling platform built using React, Tailwind CSS, and React Router. MythWeaver combines cutting-edge technology with creativity, integrating the Google Generative AI API for crafting immersive narratives.
               </p>
               <div className='mt-4 flex gap-3'>
-                <span className='text-sm bg-yellow-100 text-yellow-500 rounded-full px-3 py-1'>Python</span>
-                <span className='text-sm bg-red-100 text-red-500 rounded-full px-3 py-1'>Django</span>
-                <span className='text-sm bg-indigo-100 text-indigo-500 rounded-full px-3 py-1'>PostgreSQL</span>
+                <span className='text-sm bg-blue-100 text-blue-500 rounded-full px-3 py-1'>React</span>
+                <span className='text-sm bg-purple-100 text-purple-500 rounded-full px-3 py-1'>TailwindCSS</span>
+                <span className='text-sm bg-yellow-100 text-yellow-500 rounded-full px-3 py-1'>Google AI</span>
               </div>
             </div>
 
             {/* Project Card 3 */}
             <div className='shadow-xl rounded-[1.5rem] p-6'>
-              <div className='flex justify-between items-center'>
-                <h3 className='text-xl font-semibold text-dgray'>Project Title 3</h3>
-                <a href='#' className='text-blue-500 hover:underline'>View Project</a>
+              <img src={curatorArt} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
+              <div className='flex justify-between items-baseline mt-2'>
+                <h3 className='text-xl font-semibold text-dgray'>CuratorArt</h3>
+                <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i> View Project</a>
               </div>
-              <p className='text-gray-500 mt-2'>
-                A brief description of the third project. Explain the purpose, technologies used, and its functionality.
+              <p className='text-gray-500 text-sm mt-2'>
+              A sleek and responsive art curation platform designed using React, Node.js, and Tailwind CSS. This website allows users to explore through a clean and modern interface.
               </p>
-              <div className='mt-4 flex gap-3'>
-                <span className='text-sm bg-teal-100 text-teal-500 rounded-full px-3 py-1'>JavaScript</span>
-                <span className='text-sm bg-orange-100 text-orange-500 rounded-full px-3 py-1'>Vue.js</span>
-                <span className='text-sm bg-pink-100 text-pink-500 rounded-full px-3 py-1'>Firebase</span>
+              <div className='mt-4 flex flex-wrap gap-3'>
+                <span className='text-sm bg-blue-100 text-blue-500 rounded-full px-3 py-1'>React</span>
+                <span className='text-sm bg-red-100 text-red-500 rounded-full px-3 py-1'>Node.Js</span>
+                <span className='text-sm bg-purple-100 text-purple-500 rounded-full px-3 py-1'>TailwindCSS</span>
               </div>
             </div>
 
