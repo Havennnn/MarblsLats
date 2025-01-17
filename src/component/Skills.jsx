@@ -14,7 +14,7 @@ const Skills = () => {
     };
 
     return (
-    <section id='skills' className='flex pt-10'>
+    <section className='flex pt-10'>
       <div className='flex flex-col md:flex-row items-center w-full gap-10 sm:gap-5'>
         
         {/* Skill Section */}

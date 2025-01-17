@@ -10,8 +10,8 @@ const Footer = () => {
           <div>
             <h3 className='text-xl font-semibold mb-4'>Contact</h3>
             <ul className='flex flex-col'>
-              <li className='mb-2'><i class="fas fa-envelope"></i> <a href='mailto:your.email@example.com' className='hover:underline'>marablelatrell@gmail.com</a></li>
-              <li className='mb-2'><i class="fas fa-phone-alt"></i> <a href='tel:+1234567890' className='hover:underline'>0995-332-4941</a></li>
+              <li className='mb-2'><i className="fas fa-envelope"></i> <a href='mailto:your.email@example.com' className='hover:underline'>marablelatrell@gmail.com</a></li>
+              <li className='mb-2'><i className="fas fa-phone-alt"></i> <a href='tel:+1234567890' className='hover:underline'>0995-332-4941</a></li>
               <li className='mb-2'><i className="fas fa-map-marker-alt"></i> Taytay, Rizal</li>
             </ul>
           </div>

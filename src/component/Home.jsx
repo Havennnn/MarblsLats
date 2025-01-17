@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import cv from '../assets/MarableLatrell_Intern_Resume.pdf';
-import heroBg from '../assets/Herobg-new2.json'
+import heroBg from '../assets/Herobg-new2.json';
 import Lottie from 'lottie-react';
 
 const Home = () => {
-    const [showModal, setShowModal] = useState(false); // State to manage modal visibility
+    const [showModal, setShowModal] = useState(false);
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [status, setStatus] = useState('');
 
     const DownloadCV = () => {
         const link = document.createElement('a');
@@ -16,22 +17,74 @@ const Home = () => {
     };
 
     const openModal = () => setShowModal(true);
-    const closeModal = () => setShowModal(false);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Email:', email);
-        console.log('Message:', message);
-        closeModal();
+    const closeModal = () => {
+        setShowModal(false);
         setEmail('');
         setMessage('');
+        setStatus(''); // Reset status when closing modal
     };
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "772012b3-85ef-4d30-b354-b9c9c07587ef");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: json
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+                setStatus('Message has been sent successfully!');
+                setTimeout(() => {
+                    closeModal(); // Close modal after 2 seconds
+                }, 2000);
+            } else {
+                setStatus('Failed to send message. Please try again.');
+            }
+        } catch (error) {
+            setStatus('An error occurred. Please try again.');
+            console.error("Error during fetch:", error);
+        }
+    };
+
+    useEffect(() => {
+        if (showModal) {
+            // Disable scrolling
+            document.body.style.overflow = 'hidden';
+
+            // Add event listener for Escape key
+            const handleKeyDown = (e) => {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            };
+
+            window.addEventListener('keydown', handleKeyDown);
+
+            return () => {
+                // Cleanup event listener and re-enable scrolling
+                window.removeEventListener('keydown', handleKeyDown);
+                document.body.style.overflow = '';
+            };
+        }
+    }, [showModal]);
 
     return (
         <section className="h-[700px] xl:h-[93vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem]">
             <div className="relative flex h-full">
                 <div className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto animate-fadeIn">
-                    {/* My introduction lines */}
                     <p className="font-bold text-gray animate-pulse">GOOD DAY!</p>
                     <h1 className="font-bold text-5xl text-dgray text-shadow">I'm Latrell</h1>
                     <p className="font-bold text-2xl text-gray animate-pulse">WEB DEVELOPER</p>
@@ -39,19 +92,18 @@ const Home = () => {
                         I am a passionate and innovative web developer with a knack for creating captivating and functional websites. 
                         With a blend of creativity and technical expertise, I bring digital ideas to life and deliver seamless online experiences.
                     </p>
-                    
-                    {/* My introduction buttons */}
+
                     <div className="py-4 flex items-center gap-3">
-                        <button 
-                            className="flex items-center justify-center w-32 gap-2 p-2 text-white bg-dgray rounded-xl shadow-xl hover:transform hover:scale-110 transition duration-300 ease-in-out" 
+                        <button
+                            className="flex items-center justify-center w-32 gap-2 p-2 text-white bg-dgray rounded-xl shadow-xl hover:transform hover:scale-110 transition duration-300 ease-in-out"
                             onClick={DownloadCV}
                         >
                             <i className="fa-solid fa-file-arrow-down text-sm text-white"></i>
                             Resume
                         </button>
-                        <a 
+                        <a
                             className="flex items-center justify-center w-32 gap-2 p-2 text-white bg-dgray rounded-xl shadow-xl hover:transform hover:scale-110 transition duration-300 ease-in-out"
-                            href='#projects'
+                            href="#projects"
                         >
                             <i className="fa-solid fa-folder text-sm text-white"></i>
                             Projects
@@ -59,7 +111,6 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* My contact link buttons */}
                 <div className="absolute left-0 bottom-0 flex pr-3 py-3 bg-dgray rounded-tr-xl element3">
                     <ul className="flex items-center justify-center gap-2 sm:gap-3 element4">
                         <li className="flex animate-fadeIn mt-1">
@@ -81,59 +132,38 @@ const Home = () => {
                                 Contact
                             </p>
                         </li>
-
                     </ul>
                 </div>
 
-                {/* Modal */}
                 {showModal && (
-                    <div className="fixed inset-0 z-10 bg-gray-700 bg-opacity-50 flex justify-center items-center shadow">
-                        <div className="bg-white p-6 rounded-lg w-96    ">
-                            <h2 className="text-2xl font-semibold text-gray-800">Contact Me</h2>
-                            <form onSubmit={handleSubmit}>
-                                <label htmlFor="email" className="block text-gray-600">Email:</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full p-2 border border-gray-300 rounded-lg mb-4"
-                                    required
-                                />
-                                <label htmlFor="message" className="block text-gray-600">Message:</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    className="w-full p-2 border border-gray-300 rounded-lg mb-4"
-                                    rows="4"
-                                    required
-                                ></textarea>
-                                <button 
-                                    type="submit" 
-                                    className="w-full p-2 bg-dgray text-white rounded-xl hover:transform hover:scale-110 transition duration-300 ease-in-out"
-                                >
-                                    Send Message
-                                </button>
-                            </form>
-                            <button
-                                onClick={closeModal}
-                                className="mt-4 text-gray-600 hover:text-dgray"
-                            >
-                                Close
-                            </button>
+                    <div className="fixed inset-0 z-10 bg-dgray bg-opacity-50 flex justify-center items-center shadow">
+                    <div className="bg-white p-6 rounded-lg w-96 shadow-xl">
+                        <div className='relative flex justify-between items-baseline mb-6'>
+                          <h2 className="text-3xl font-semibold text-gray-800 ">Contact Me</h2>
+                          <button
+                            onClick={closeModal}
+                            className="absolute right-0 mt-1 text-gray-600 text-white rounded-full bg-dgray w-7 h-7 flex justify-center items-center"
+                          >
+                            X
+                          </button>
                         </div>
+                        
+                        <form onSubmit={onSubmit}>
+                            <input type="text" name="name" placeholder='Enter name' className="w-full p-2 border border-gray-300 rounded-lg mb-4" required />
+                            <input type="email" name="email" placeholder='Enter email' className="w-full p-2 border border-gray-300 rounded-lg mb-4" required />
+                            <textarea name="message" placeholder='Your message' className="w-full p-2 border border-gray-300 rounded-lg mb-4" rows="4" required></textarea>
+                            <button type="submit" className="w-full p-2 bg-dgray text-white rounded-xl hover:transform hover:scale-110 transition duration-300 ease-in-out">Submit Form</button>
+                        </form>
+                        <p className='text-center italic text-sm mt-2'>*It might take a while to send please wait*</p>
+                        {status && <div className="mt-4 text-center text-xl font-semibold text-green-600">{status}</div>}
+
+                        
                     </div>
+                </div>
                 )}
 
-                {/* home hero background */}
-                <div className="absolute right-14 bottom-1/2 transform translate-y-1/2  md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block animate-fadeIn" > 
-                    <Lottie
-                        animationData={heroBg}
-                        loop={true}
-                    />
+                <div className="absolute right-14 bottom-1/2 transform translate-y-1/2 md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block animate-fadeIn">
+                    <Lottie animationData={heroBg} loop={true} />
                 </div>
             </div>
         </section>

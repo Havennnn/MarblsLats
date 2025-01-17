@@ -5,7 +5,7 @@ import curatorArt from '../assets/curatorArt.jpg'
 
 const Project = () => {
   return (
-    <section id='projects' className='pt-10'>
+    <section className='pt-10'>
       <div className='relative flex flex-col md:flex-row w-full h-full px-6 sm:px-14 py-10 bg-white rounded-[1.5rem] justify-center items-center'>
         <div className='absolute top-0 flex px-3 pb-3 bg-dgray rounded-bl-[1.5rem] rounded-br-[1.5rem] element16'>
           <div className='flex gap-3 justify-center items-center element17'>
@@ -19,7 +19,7 @@ const Project = () => {
           <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             
             {/* Project Card 1 */}
-            <div className='shadow-xl rounded-[1.5rem] p-6'>
+            <div className='shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out'>
               <img src={mernAuth} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
               <div className='flex justify-between items-baseline mt-2'>
                 <h3 className='text-xl font-semibold text-dgray'>Login Auth</h3>
@@ -30,26 +30,26 @@ const Project = () => {
               </p>
               <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
                 <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-react-original"></i>
+                <i className="devicon-react-original"></i>
                 React</span>  
                 <span className='text-sm border text-red-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-nodejs-plain"></i>
+                <i className="devicon-nodejs-plain"></i>
                 Node.js</span>
                 <span className='text-sm border text-orange-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-express-original"></i>  
+                <i className="devicon-express-original"></i>  
                 Express.js</span>
                 <span className='text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-tailwindcss-plain"></i>
+                <i className="devicon-tailwindcss-plain"></i>
                 TailwindCSS
                 </span>
                 <span className='text-sm border text-green-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-mongodb-plain"></i>
+                <i classname="devicon-mongodb-plain"></i>
                 MongoDB</span>
               </div>
             </div>
 
             {/* Project Card 2 */}
-            <div className='shadow-xl rounded-[1.5rem] p-6'>
+            <div className='shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out'>
               <img src={storyWeaver} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
               <div className='flex justify-between items-baseline mt-2'>
                 <h3 className='text-xl font-semibold text-dgray'>Myth Weaver</h3>
@@ -60,19 +60,19 @@ const Project = () => {
               </p>
               <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
                 <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-react-original"></i>
+                <i className="devicon-react-original"></i>
                 React</span>
                 <span className='text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-tailwindcss-plain"></i>
+                <i className="devicon-tailwindcss-plain"></i>
                 TailwindCSS</span>
                 <span className='text-sm border text-orange-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-google-plain"></i>
+                <i className="devicon-google-plain"></i>
                 Google AI</span>
               </div>
             </div>
 
             {/* Project Card 3 */}
-            <div className='shadow-xl rounded-[1.5rem] p-6'>
+            <div className='shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out'>
               <img src={curatorArt} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
               <div className='flex justify-between items-baseline mt-2'>
                 <h3 className='text-xl font-semibold text-dgray'>CuratorArt</h3>
@@ -83,13 +83,13 @@ const Project = () => {
               </p>
               <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
               <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-react-original"></i>
+                <i className="devicon-react-original"></i>
                 React</span>  
                 <span className='text-sm border text-red-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-nodejs-plain"></i>
+                <i className="devicon-nodejs-plain"></i>
                 Node.js</span>
                 <span className='text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
-                <i class="devicon-tailwindcss-plain"></i>
+                <i className="devicon-tailwindcss-plain"></i>
                 TailwindCSS</span>
               </div>
             </div>
