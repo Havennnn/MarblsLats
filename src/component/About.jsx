@@ -14,7 +14,7 @@ const About = () => {
           setShowModal(false);
           setEmail('');
           setMessage('');
-          setStatus(''); // Reset status when closing modal
+          setStatus('');
       };
   
       const onSubmit = async (event) => {
@@ -41,8 +41,8 @@ const About = () => {
               if (data.success) {
                   setStatus('Message has been sent successfully!');
                   setTimeout(() => {
-                      closeModal(); // Close modal after 2 seconds
-                  }, 2000);
+                      closeModal();
+                  }, 1000);
               } else {
                   setStatus('Failed to send message. Please try again.');
               }
@@ -54,10 +54,8 @@ const About = () => {
   
       useEffect(() => {
           if (showModal) {
-              // Disable scrolling
               document.body.style.overflow = 'hidden';
   
-              // Add event listener for Escape key
               const handleKeyDown = (e) => {
                   if (e.key === 'Escape') {
                       closeModal();
@@ -67,7 +65,6 @@ const About = () => {
               window.addEventListener('keydown', handleKeyDown);
   
               return () => {
-                  // Cleanup event listener and re-enable scrolling
                   window.removeEventListener('keydown', handleKeyDown);
                   document.body.style.overflow = '';
               };
@@ -77,9 +74,7 @@ const About = () => {
 
   return (
     <section className='flex flex-col md:flex-row pt-10 w-full h-full gap-5'>
-      {/* Left Div */}
       <div className='relative flex w-full md:w-3/6 h-full bg-white rounded-bl-[1.5rem] rounded-br-[1.5rem] rounded-tr-[1.5rem] flex-grow'>
-        {/* Heading */}
         <div className='flex element13'>
           <div className='absolute flex pr-3 py-3 gap-2 bg-dgray justify-center items-center rounded-br-[1.5rem] element12'>
             <i className="fa-solid fa-id-badge text-3xl text-white"></i>
@@ -166,7 +161,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Right Div (Lottie) */}
       <div className="relative flex w-full md:w-4/6 h-full m-auto justify-center items-center">
         <div className="w-5/6 hidden md:block animate-fadeIn">
           <Lottie
