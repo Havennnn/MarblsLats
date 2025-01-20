@@ -26,7 +26,7 @@ const Project = () => {
                 <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i>View Project</a>
               </div>
               <p className='text-gray-500 text-sm mt-2'>
-                A fully functional authentication system built using the MERN stack with secure features such as email verification and password reset via a 6-digit OTP.
+                  
               </p>
               <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
                 <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
@@ -52,11 +52,11 @@ const Project = () => {
             <div className='shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out'>
               <img src={storyWeaver} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
               <div className='flex justify-between items-baseline mt-2'>
-                <h3 className='text-xl font-semibold text-dgray'>Myth Weaver</h3>
+                <h3 className='text-xl font-semibold text-dgray'>Story Weaver</h3>
                 <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i> View Project</a>
               </div>
               <p className='text-gray-500 text-sm mt-2'>
-              A modern and dynamic storytelling platform built using React, Tailwind CSS, and React Router. MythWeaver combines cutting-edge technology with creativity, integrating the Google Generative AI API for crafting immersive narratives.
+              A modern and dynamic storytelling platform built using React, Tailwind CSS, and React Router. Story Weaver combines cutting-edge technology with creativity, integrating the Google Generative AI API for crafting immersive narratives.
               </p>
               <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
                 <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
@@ -67,7 +67,7 @@ const Project = () => {
                 TailwindCSS</span>
                 <span className='text-sm border text-orange-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
                 <i className="devicon-google-plain"></i>
-                Google AI</span>
+                Gemini API</span>
               </div>
             </div>
 
