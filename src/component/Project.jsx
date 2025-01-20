@@ -15,7 +15,6 @@ const Project = () => {
         </div>
 
         <div className='w-full'>
-          {/* Grid Layout for Project Cards */}
           <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             
             {/* Project Card 1 */}
@@ -23,7 +22,7 @@ const Project = () => {
               <img src={mernAuth} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
               <div className='flex justify-between items-baseline mt-2'>
                 <h3 className='text-xl font-semibold text-dgray'>Login Auth</h3>
-                <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i>View Project</a>
+                <a href='https://github.com/Havennnn/mern-auth' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i>View Project</a>
               </div>
               <p className='text-gray-500 text-sm mt-2'>
                   
@@ -53,7 +52,7 @@ const Project = () => {
               <img src={storyWeaver} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
               <div className='flex justify-between items-baseline mt-2'>
                 <h3 className='text-xl font-semibold text-dgray'>Story Weaver</h3>
-                <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i> View Project</a>
+                <a href='https://github.com/Havennnn/StoryWeaver' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i> View Project</a>
               </div>
               <p className='text-gray-500 text-sm mt-2'>
               A modern and dynamic storytelling platform built using React, Tailwind CSS, and React Router. Story Weaver combines cutting-edge technology with creativity, integrating the Google Generative AI API for crafting immersive narratives.
@@ -76,7 +75,7 @@ const Project = () => {
               <img src={curatorArt} alt='page' className='w-full rounded-[1.5rem] shadow-sm' />
               <div className='flex justify-between items-baseline mt-2'>
                 <h3 className='text-xl font-semibold text-dgray'>CuratorArt</h3>
-                <a href='#' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i> View Project</a>
+                <a href='https://github.com/Havennnn/curatorArt' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i> View Project</a>
               </div>
               <p className='text-gray-500 text-sm mt-2'>
               A sleek and responsive art curation platform designed using React, Node.js, and Tailwind CSS. This website allows users to explore through a clean and modern interface.
