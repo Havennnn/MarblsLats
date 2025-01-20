@@ -25,7 +25,8 @@ const Project = () => {
                 <a href='https://github.com/Havennnn/mern-auth' className='text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1'><i class="fa-solid fa-link"></i>View Project</a>
               </div>
               <p className='text-gray-500 text-sm mt-2'>
-                  
+              A fully functional authentication system built using the MERN stack with secure features such as email verification and password reset via a 6-digit OTP.
+react, node, express,tailwind css, mongodb
               </p>
               <div className='mt-4 flex flex-wrap gap-3 hover:cursor-default'>
                 <span className='text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
