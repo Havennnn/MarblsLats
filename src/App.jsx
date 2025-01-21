@@ -7,12 +7,14 @@ import SkillsBox from './component/SkillsBox.jsx';
 import About from './component/About.jsx';
 import Project from './component/Project.jsx';
 import Footer from './component/Footer.jsx';
+import ScrollIndicator from './component/ScrollIndicator.jsx';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div id='home' className="relative px-8 lg:px-12 pt-6 bg-[#1E1E1E] overflow-hidden">
         <Navbar />
+        <ScrollIndicator />
         <Home />
         <div id="skills">
           <Skills />
