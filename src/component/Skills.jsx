@@ -97,7 +97,6 @@ const Skill = ({ name, level }) => {
   }, [level]);
 
   const getDeviconClass = (name) => {
-    console.log("Skill name:", name); // Debug skill names
     const iconMap = {
       HTML: "devicon-html5-plain",
       CSS: "devicon-css3-plain",

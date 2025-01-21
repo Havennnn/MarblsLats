@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import cv from '../assets/MarableLatrell_Intern_Resume.pdf';
 import heroBg from '../assets/Herobg-new2.json';
 import Lottie from 'lottie-react';
+import { motion } from 'framer-motion';
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false);
@@ -81,10 +82,22 @@ const Home = () => {
         }
     }, [showModal]);
 
+    // Define slide-in animation for the home section
+    const slideIn = {
+        hidden: { opacity: 0, x: '-100%' },
+        visible: { opacity: 1, x: '0%', transition: { duration: 0.5 } },
+    };
+
     return (
         <section className="h-[700px] xl:h-[93vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem]">
             <div className="relative flex h-full">
-                <div className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto animate-fadeIn">
+                {/* Hero Section with Slide-in Animation */}
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={slideIn}
+                    className="relative flex w-full flex-col gap-1 px-6 sm:px-14 md:w-[55%] md:py-24 lg:w-[58%] my-auto animate-fadeIn"
+                >
                     <p className="font-bold text-gray animate-pulse">GOOD DAY!</p>
                     <h1 className="font-bold text-5xl text-dgray text-shadow">I'm Latrell</h1>
                     <p className="font-bold text-2xl text-gray animate-pulse">WEB DEVELOPER</p>
@@ -109,7 +122,7 @@ const Home = () => {
                             Projects
                         </a>
                     </div>
-                </div>
+                </motion.div>
 
                 <div className="absolute left-0 bottom-0 flex pr-3 py-3 bg-dgray rounded-tr-xl element3">
                     <ul className="flex items-center justify-center gap-2 sm:gap-3 element4">
@@ -137,34 +150,36 @@ const Home = () => {
 
                 {showModal && (
                     <div className="fixed inset-0 z-10 bg-dgray bg-opacity-50 flex justify-center items-center shadow">
-                    <div className="bg-white p-6 rounded-lg w-96 shadow-xl">
-                        <div className='relative flex justify-between items-baseline mb-6'>
-                          <h2 className="text-3xl font-semibold text-gray-800 ">Contact Me</h2>
-                          <button
-                            onClick={closeModal}
-                            className="absolute right-0 mt-1 text-gray-600 text-white rounded-full bg-dgray w-7 h-7 flex justify-center items-center"
-                          >
-                            X
-                          </button>
-                        </div>
-                        
-                        <form onSubmit={onSubmit}>
-                            <input type="text" name="name" placeholder='Enter name' className="w-full p-2 border border-gray-300 rounded-lg mb-4" required />
-                            <input type="email" name="email" placeholder='Enter email' className="w-full p-2 border border-gray-300 rounded-lg mb-4" required />
-                            <textarea name="message" placeholder='Your message' className="w-full p-2 border border-gray-300 rounded-lg mb-4" rows="4" required></textarea>
-                            <button type="submit" className="w-full p-2 bg-dgray text-white rounded-xl hover:transform hover:scale-110 transition duration-300 ease-in-out">Submit Form</button>
-                        </form>
-                        <p className='text-center italic text-sm mt-2'>*It might take a while to send please wait*</p>
-                        {status && <div className="mt-4 text-center text-xl font-semibold text-green-600">{status}</div>}
+                        <div className="bg-white p-6 rounded-lg w-96 shadow-xl">
+                            <div className='relative flex justify-between items-baseline mb-6'>
+                              <h2 className="text-3xl font-semibold text-gray-800 ">Contact Me</h2>
+                              <button
+                                onClick={closeModal}
+                                className="absolute right-0 mt-1 text-gray-600 text-white rounded-full bg-dgray w-7 h-7 flex justify-center items-center"
+                              >
+                                X
+                              </button>
+                            </div>
 
-                        
+                            <form onSubmit={onSubmit}>
+                                <input type="text" name="name" placeholder='Enter name' className="w-full p-2 border border-gray-300 rounded-lg mb-4" required />
+                                <input type="email" name="email" placeholder='Enter email' className="w-full p-2 border border-gray-300 rounded-lg mb-4" required />
+                                <textarea name="message" placeholder='Your message' className="w-full p-2 border border-gray-300 rounded-lg mb-4" rows="4" required></textarea>
+                                <button type="submit" className="w-full p-2 bg-dgray text-white rounded-xl hover:transform hover:scale-110 transition duration-300 ease-in-out">Submit Form</button>
+                            </form>
+                            <p className='text-center italic text-sm mt-2'>*It might take a while to send please wait*</p>
+                            {status && <div className="mt-4 text-center text-xl font-semibold text-green-600">{status}</div>}
+                        </div>
                     </div>
-                </div>
                 )}
 
-                <div className="absolute right-14 bottom-1/2 transform translate-y-1/2 md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block animate-fadeIn">
-                    <Lottie animationData={heroBg} loop={true} />
-                </div>
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={slideIn} 
+                    className="right-14 bottom-1/2 transform translate-y-1/2 md:w-[20rem] lg:w-[28rem] xl:w-[32rem] my-auto hidden md:block animate-fadeIn">
+                        <Lottie animationData={heroBg} loop={true} />
+                </motion.div>
             </div>
         </section>
     );
