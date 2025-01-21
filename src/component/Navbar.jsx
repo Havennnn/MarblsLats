@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="relative animate-fadeIn sticky-navbar">
+    <div className="relative sticky-navbar">
       <div className="absolute left-0 right-0 z-10 justify-between items-center gap-2 flex lg:hidden">
         <h1 className="font-semibold text-3xl py-2 text-gray px-6 sm:px-14 text-shadow">
           Marbls<span className="font-semibold text-5xl text-dgray">Lats</span>
