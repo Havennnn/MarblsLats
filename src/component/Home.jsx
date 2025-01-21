@@ -125,27 +125,34 @@ const Home = () => {
                 </motion.div>
 
                 <div className="absolute left-0 bottom-0 flex pr-3 py-3 bg-dgray rounded-tr-xl element3">
-                    <ul className="flex items-center justify-center gap-2 sm:gap-3 element4">
-                        <li className="flex animate-fadeIn mt-1">
+                    <div className='element4'>
+                    <motion.ul
+                        initial="hidden"
+                        animate="visible"
+                        variants={slideIn}
+                        ul className="flex items-center justify-center gap-2 sm:gap-3"
+                    >
+                        <li className="flex mt-1">
                             <a href="https://github.com/Havennnn" target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-square-github text-white text-3xl sm:text-5xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
                             </a>
                         </li>
-                        <li className="flex animate-fadeIn mt-1">
+                        <li className="flex mt-1">
                             <a href="https://www.linkedin.com/in/latrell-marable-b43a37256/" target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-linkedin text-white text-3xl sm:text-5xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
                             </a>
                         </li>
                         <li
                             onClick={openModal}
-                            className="border-black flex items-center justify-around h-[27px] sm:h-[43px] sm:mt-1 gap-2 px-3 sm:px-6 text-dgray bg-white rounded hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out animate-fadeIn"
+                            className="border-black flex items-center justify-around h-[27px] sm:h-[43px] sm:mt-1 gap-2 px-3 sm:px-6 text-dgray bg-white rounded hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"
                         >
                             <i className="fas fa-envelope text-xl"></i>
                             <p className="text-xl font-semibold text-dgray">
                                 Contact
                             </p>
                         </li>
-                    </ul>
+                    </motion.ul>
+                    </div>
                 </div>
 
                 {showModal && (
