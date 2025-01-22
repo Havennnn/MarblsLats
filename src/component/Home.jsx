@@ -22,7 +22,7 @@ const Home = () => {
         setShowModal(false);
         setEmail('');
         setMessage('');
-        setStatus(''); // Reset status when closing modal
+        setStatus('');
     };
 
     const onSubmit = async (event) => {
@@ -49,7 +49,7 @@ const Home = () => {
             if (data.success) {
                 setStatus('Message has been sent successfully!');
                 setTimeout(() => {
-                    closeModal(); // Close modal after 2 seconds
+                    closeModal();
                 }, 2000);
             } else {
                 setStatus('Failed to send message. Please try again.');
@@ -62,10 +62,7 @@ const Home = () => {
 
     useEffect(() => {
         if (showModal) {
-            // Disable scrolling
             document.body.style.overflow = 'hidden';
-
-            // Add event listener for Escape key
             const handleKeyDown = (e) => {
                 if (e.key === 'Escape') {
                     closeModal();
@@ -75,14 +72,12 @@ const Home = () => {
             window.addEventListener('keydown', handleKeyDown);
 
             return () => {
-                // Cleanup event listener and re-enable scrolling
                 window.removeEventListener('keydown', handleKeyDown);
                 document.body.style.overflow = '';
             };
         }
     }, [showModal]);
 
-    // Define slide-in animation for the home section
     const slideIn = {
         hidden: { opacity: 0, x: '-100%' },
         visible: { opacity: 1, x: '0%', transition: { duration: 0.5 } },
@@ -91,7 +86,6 @@ const Home = () => {
     return (
         <section className="h-[700px] xl:h-[93vh] bg-white transition-all duration-500 ease-in-out rounded-tl-[1.5rem] rounded-br-[1.5rem]">
             <div className="relative flex h-full">
-                {/* Hero Section with Slide-in Animation */}
                 <motion.div
                     initial="hidden"
                     animate="visible"
