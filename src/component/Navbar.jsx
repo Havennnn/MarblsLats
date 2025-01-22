@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,18 +38,27 @@ const Navbar = () => {
     }
   }, [isMenuOpen]);
 
+  const slideIn = {
+    hidden: { opacity: 0, x: '-100%' },
+    visible: { opacity: 1, x: '0%', transition: { duration: 0.5 } },
+  };
+
   return (
     <div className="relative sticky-navbar">
       <div className="absolute left-0 right-0 z-10 justify-between items-center gap-2 flex lg:hidden">
-        <h1 className="font-semibold text-3xl py-2 text-gray px-6 sm:px-14 text-shadow">
+        <motion.h1
+        initial="hidden"
+        animate="visible"
+        variants={slideIn}  
+        className="font-semibold text-3xl py-2 text-gray px-6 sm:px-14 text-shadow">
           Marbls<span className="font-semibold text-5xl text-dgray">Lats</span>
-        </h1>
+        </motion.h1>
         <div className="flex justify-center items-center p-3 w-16 rounded-bl-[1.5rem] bg-dgray element5 menu">
           <button onClick={toggleMenu} className="text-white2 element6">
             {isMenuOpen ? (
-              <i className="fa-solid fa-close text-white text-4xl hover:transform hover:scale-110 transition ease-in-out duration-300 animate-fadeIn"></i>
+              <i className="fa-solid fa-close text-white text-4xl hover:transform hover:scale-110 transition ease-in-out animate-fadeIn duration-500"></i>
             ) : (
-              <i className="fa-solid fa-bars text-white text-4xl [40px] hover:transform hover:scale-110 transition ease-in-out duration-300 animate-fadeIn"></i>
+              <i className="fa-solid fa-bars text-white text-4xl [40px] hover:transform hover:scale-110 transition ease-in-out animate-fadeIn duration-500"></i>
             )}
           </button>
         </div>
@@ -91,12 +101,20 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="absolute left-0 right-0 z-10 justify-between items-center gap-2 hidden lg:flex">
         <div className="flex">
-          <h1 className="font-semibold text-3xl text-gray px-14 text-shadow">
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={slideIn} 
+            className="font-semibold text-3xl text-gray px-14 text-shadow"
+          >
             Marbls<span className="font-semibold text-5xl text-dgray">Lats</span>
-          </h1>
+          </motion.h1>
         </div>
         <div className="flex pl-3 pt-3 pb-5 rounded-bl-[1.5rem] bg-dgray element">
-          <ul className="flex gap-1 lg:gap-6 element2">
+          <div className='element2'>
+          <ul
+            className="flex gap-1 lg:gap-6 animate-fadeIn duration-500"
+          >
             <li
               className="flex text-white bg-white py-1 px-6 rounded-xl justify-center items-center gap-2"
             >
@@ -104,27 +122,28 @@ const Navbar = () => {
               <p className="font-semibold text-dgray cursor-default">Home</p>
             </li>
             <li
-              className="flex border-2 text-white border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-center items-center gap-2 hover:transform hover:scale-110 hover:bg-white transition ease-in-out duration-300 group"
+              className="flex border-2 text-white border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-center items-center gap-2 hover:transform hover:scale-110 hover:bg-white transition ease-in-out duration-500 group"
               onClick={() => scrollToSection('skills')}
             >
               <i className="fa-solid fa-code text-sm group-hover:text-dgray"></i>
               <p className="font-semibold group-hover:text-dgray">Skills</p>
             </li>
             <li
-              className="flex border-2 text-white border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-center items-center gap-2 hover:transform hover:scale-110 hover:bg-white transition ease-in-out duration-300 group"
+              className="flex border-2 text-white border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-center items-center gap-2 hover:transform hover:scale-110 hover:bg-white transition ease-in-out duration-500 group"
               onClick={() => scrollToSection('contact')}
             >
               <i className="fa-solid fa-id-badge text-sm group-hover:text-dgray"></i>
               <p className="font-semibold group-hover:text-dgray">Contact</p>
             </li>
             <li
-              className="flex border-2 text-white border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-center items-center gap-2 hover:transform hover:scale-110 hover:bg-white transition ease-in-out duration-300 group"
+              className="flex border-2 text-white border-white hover:cursor-pointer py-1 px-6 rounded-xl justify-center items-center gap-2 hover:transform hover:scale-110 hover:bg-white transition ease-in-out duration-500 group"
               onClick={() => scrollToSection('projects')}
             >
               <i className="fa-solid fa-folder text-sm group-hover:text-dgray"></i>
               <p className="font-semibold group-hover:text-dgray">Project</p>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
