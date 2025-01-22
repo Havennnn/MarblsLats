@@ -22,7 +22,7 @@ const Home = () => {
         setShowModal(false);
         setEmail('');
         setMessage('');
-        setStatus('');
+        setStatus(''); 
     };
 
     const onSubmit = async (event) => {
