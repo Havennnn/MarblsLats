@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { motion } from 'framer-motion';
+import logoFilled from '../assets/LogoFilled.svg'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,8 +51,9 @@ const Navbar = () => {
         initial="hidden"
         animate="visible"
         variants={slideIn}  
-        className="font-semibold text-3xl py-2 text-gray px-6 sm:px-14 text-shadow">
-          Marbls<span className="font-semibold text-5xl text-dgray">Lats</span>
+        className="font-semibold text-xl py-2 text-gray px-6 sm:px-14 text-shadow flex justify-center items-center gap-2">
+          <img src={logoFilled} alt='logoFilled' className='h-8 w-8' />
+          <p>Marbls<span className="font-semibold text-2xl text-dgray">Lats</span></p>
         </motion.h1>
         <div className="flex justify-center items-center p-3 w-16 rounded-bl-[1.5rem] bg-dgray element5 menu">
           <button onClick={toggleMenu} className="text-white2 element6">
@@ -68,7 +70,7 @@ const Navbar = () => {
       <div
         ref={menuRef}
         style={{ transform: 'translateX(100%)' }}
-        className="bg-dgray text-white px-2 absolute rounded-bl-[1rem] right-0 top-[62px] z-20 transition-all duration-500 ease-in-out block lg:hidden element8"
+        className="bg-dgray text-white px-2 absolute rounded-bl-[1rem] right-0 top-[60px] z-20 transition-all duration-500 ease-in-out block lg:hidden element8"
       >
         <ul className="flex flex-col pt-2 pb-5 gap-5">
           <li
@@ -105,9 +107,10 @@ const Navbar = () => {
             initial="hidden"
             animate="visible"
             variants={slideIn} 
-            className="font-semibold text-3xl text-gray px-14 text-shadow"
+            className="font-semibold text-2xl text-gray px-14 text-shadow flex justify-center items-center gap-2"
           >
-            Marbls<span className="font-semibold text-5xl text-dgray">Lats</span>
+            <img src={logoFilled} alt='logoFilled' className='h-8 w-8' />
+            <p>Marbls<span className="font-semibold text-3xl text-dgray">Lats</span></p>
           </motion.h1>
         </div>
         <div className="flex pl-3 pt-3 pb-5 rounded-bl-[1.5rem] bg-dgray element">
