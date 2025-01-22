@@ -10,11 +10,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Function to scroll to the desired section
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId, offset = 20) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: sectionTop - offset,
+        behavior: 'smooth'
+      });
     }
   };
 

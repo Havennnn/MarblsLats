@@ -40,8 +40,7 @@ react, node, express,tailwind css, mongodb
                 Express.js</span>
                 <span className='text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
                 <i className="devicon-tailwindcss-plain"></i>
-                TailwindCSS
-                </span>
+                TailwindCSS</span>
                 <span className='text-sm border text-green-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center'>
                 <i classname="devicon-mongodb-plain"></i>
                 MongoDB</span>

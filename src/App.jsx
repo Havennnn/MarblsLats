@@ -8,6 +8,7 @@
   import Project from './component/Project.jsx';
   import Footer from './component/Footer.jsx';
   import ScrollIndicator from './component/ScrollIndicator.jsx';
+  import StickyNavbar from './component/StickyNavbar.jsx';
 
   const App = () => {
     return (
@@ -16,6 +17,7 @@
           <Navbar />
           <ScrollIndicator />
           <Home />
+          <StickyNavbar />
           <div id="skills">
             <Skills />
             <SkillsBox />
