@@ -109,7 +109,7 @@ const About = () => {
         </div>
 
         {showModal && (
-                    <div className="fixed inset-0 z-10 bg-dgray bg-opacity-50 flex justify-center items-center shadow">
+                    <div className="fixed inset-0 z-50 bg-dgray bg-opacity-50 flex justify-center items-center shadow">
                         <div className="bg-white p-6 rounded-lg w-96 shadow-xl">
                             <div className='relative flex justify-between items-baseline mb-6'>
                               <h2 className="text-3xl font-semibold text-gray-800 ">Contact Me</h2>

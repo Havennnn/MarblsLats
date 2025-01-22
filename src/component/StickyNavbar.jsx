@@ -45,7 +45,7 @@ const StickyNavbar = () => {
         ref={navbarRef}
         className={`h-8 px-8 bg-white transition-all duration-700 ease-linear rounded-[1.5rem] shadow-lg 
         ${isSticky ? 
-        'fixed flex justify-between items-center top-2 inset-x-0 mx-auto z-50 scale-100 bg-opacity-100 w-[92%] shadow-2xl' 
+        'fixed flex justify-between items-center top-2 inset-x-0 mx-auto z-10 scale-100 bg-opacity-100 w-[92%] shadow-2xl' 
         : 'relative w-full scale-full flex justify-center items-center border'}`}
         style={{ transition: 'top 0.4s ease, transform 0.3s ease, opacity 0.3s ease' }}
     >
