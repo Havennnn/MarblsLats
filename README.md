@@ -1,3 +1,6 @@
+- npm install
+- npm run dev
+
 Welcome to my personal portfolio!
 
 It is designed to showcase my web development skills and projects. Built using React for a dynamic and seamless user experience and styled with Tailwind CSS for a modern, responsive design, this portfolio highlights my expertise in creating visually appealing and functional web applications.
