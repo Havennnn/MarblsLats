@@ -51,12 +51,12 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
           variants={slideIn}
-          className="font-bold text-xl py-2 text-gray px-6 sm:px-14 text-shadow flex justify-center items-center gap-2"
+          className="font-semibold py-2 text-gray px-6 sm:px-14 text-shadow flex justify-center items-center gap-2"
         >
           <img src={logoFilled} alt="logoFilled" className="h-8 w-8" />
-          <p>
-            Marbls
-            <span className="font-semibold text-2xl text-dgray">Lats</span>
+          <p className="text-xl text-dgray font-semibold">
+            Lats
+            <span className="font-semibold text-2xl text-gray">Marbls</span>
           </p>
         </motion.h1>
         <div className="flex justify-center items-center p-3 w-16 rounded-bl-[1.5rem] bg-dgray element5 menu">
@@ -111,12 +111,12 @@ const Navbar = () => {
             initial="hidden"
             animate="visible"
             variants={slideIn}
-            className="font-semibold text-2xl text-gray px-14 text-shadow flex justify-center items-center gap-2"
+            className="px-14 text-shadow flex justify-center items-center gap-2"
           >
             <img src={logoFilled} alt="logoFilled" className="h-8 w-8" />
-            <p>
-              Marbls
-              <span className="font-semibold text-3xl text-dgray">Lats</span>
+            <p className="font-semibold text-2xl text-dgray">
+              Lats
+              <span className="font-semibold text-3xl text-gray">Marbls</span>
             </p>
           </motion.h1>
         </div>
