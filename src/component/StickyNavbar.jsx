@@ -68,28 +68,28 @@ const StickyNavbar = () => {
               <ul className="flex gap-2 text-dgray">
                 <li
                   onClick={() => scrollToSection("home")}
-                  className="border bg-white px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
+                  className="border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
                   <i className="fa-solid fa-house"></i>
                   <p>Home</p>
                 </li>
                 <li
                   onClick={() => scrollToSection("skills")}
-                  className="border bg-white px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
+                  className="border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
                   <i className="fa-solid fa-code"></i>
                   <p>Skills</p>
                 </li>
                 <li
                   onClick={() => scrollToSection("contact")}
-                  className="border bg-white px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
+                  className="border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
                   <i className="fa-solid fa-phone"></i>
                   <p>Contact</p>
                 </li>
                 <li
                   onClick={() => scrollToSection("projects")}
-                  className="border bg-white px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
+                  className="border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:transform hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
                   <i className="fa-solid fa-folder"></i>
                   <p>Projects</p>
@@ -97,12 +97,12 @@ const StickyNavbar = () => {
               </ul>
             </div>
             <div className="justify-between items-center flex md:hidden">
-              <ul className="flex gap-1 py-2 text-dgray transition-all">
+              <ul className="flex gap-1 text-dgray transition-all">
                 <li
                   onClick={() => scrollToSection("home")}
                   className="group border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
-                  <i className="fa-solid fa-house transition-all duration-300"></i>
+                  <i className="fa-solid fa-house transition-all duration-300 py-1"></i>
                   <span className="hidden group-hover:inline transition-all duration-300">
                     Home
                   </span>
@@ -111,7 +111,7 @@ const StickyNavbar = () => {
                   onClick={() => scrollToSection("skills")}
                   className="group border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
-                  <i className="fa-solid fa-code transition-all duration-300"></i>
+                  <i className="fa-solid fa-code transition-all duration-300 py-1"></i>
                   <span className="hidden group-hover:inline transition-all duration-300">
                     Skills
                   </span>
@@ -120,7 +120,7 @@ const StickyNavbar = () => {
                   onClick={() => scrollToSection("contact")}
                   className="group border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
-                  <i className="fa-solid fa-phone transition-all duration-300"></i>
+                  <i className="fa-solid fa-phone transition-all duration-300 py-1"></i>
                   <span className="hidden group-hover:inline transition-all duration-300">
                     Contact
                   </span>
@@ -129,7 +129,7 @@ const StickyNavbar = () => {
                   onClick={() => scrollToSection("projects")}
                   className="group border px-3 rounded-[1.5rem] flex gap-1 items-center cursor-pointer hover:bg-dgray hover:border-dgray hover:text-white transition ease-in-out duration-300"
                 >
-                  <i className="fa-solid fa-folder transition-all duration-300"></i>
+                  <i className="fa-solid fa-folder transition-all duration-300 py-1"></i>
                   <span className="hidden group-hover:inline transition-all duration-300">
                     Projects
                   </span>

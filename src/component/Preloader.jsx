@@ -13,7 +13,7 @@ const Preloader = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.5, ease: "easeInOut" }}
-      className="animate-spin rounded-full border-b-4 border-white border-solid h-24 w-24 lg:h-32 lg:w-32 flex justify-center items-center">
+      className="animate-spin rounded-full border-b-4 border-white border-solid h-[90px] w-[90px] lg:h-32 lg:w-32 flex justify-center items-center">
         <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -24,7 +24,7 @@ const Preloader = () => {
       <motion.img
         src={logo}
         alt="Loading"
-        className="absolute h-10 w-10 lg:h-12 lg:w-12"
+        className="absolute h-8 w-8 lg:h-12 lg:w-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, scale: 0.9 }}
@@ -45,7 +45,7 @@ const WelcomeScreen = () => {
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 1, ease: "easeInOut" }} 
       className="text-dgray font-bold flex justify-center items-center gap-2">
-        <img src={logoFilled} className="h-8 w-8"></img><p className="text-3xl">Lats<span className="text-4xl text-gray">Marbls</span></p></motion.h1>
+        <img src={logoFilled} className="w-6 h-6 md:h-8 md:w-8"></img><p className="text-xl md:text-3xl">Lats<span className="text-2xl md:text-4xl text-gray">Marbls</span></p></motion.h1>
     </div>
   );
 };
