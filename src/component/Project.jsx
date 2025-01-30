@@ -170,7 +170,7 @@ const Project = () => {
                 </h3>
                 <div className="flex items-center gap-2 text-lg text-dgray">
                   <a
-                    href="https://lightsaas-landingpage-tau.vercel.app"
+                    href="https://github.com/Havennnn/lightsaas-landingpage"
                     className="flex items-center justify-center"
                   >
                     <i className="fa-brands fa-github text-2xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
