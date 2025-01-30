@@ -151,12 +151,12 @@ const Project = () => {
                     React
                   </span>
                   <span className="text-sm flex gap-1 justify-center items-center">
-                    <i className="devicon-tailwindcss-plain"></i>
-                    TailwindCSS
-                  </span>
-                  <span className="text-sm flex gap-1 justify-center items-center">
                     <i class="devicon-vitejs-plain"></i>
                     Vite
+                  </span>
+                  <span className="text-sm flex gap-1 justify-center items-center">
+                    <i className="devicon-tailwindcss-plain"></i>
+                    TailwindCSS
                   </span>
                 </div>
             </div>
