@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../assets/LogoGray.svg";
 import logoFilled from "../assets/LogoFilled.svg";
 
 const StickyNavbar = () => {
@@ -60,8 +59,8 @@ const StickyNavbar = () => {
               alt="logo"
               className="w-6 h-6 opacity-100"
             ></img>
-            <h1 className="font-bold text-gray hidden md:block">
-              Marbls<span className="text-dgray text-xl">Lats</span>
+            <h1 className="font-bold text-dgray hidden md:block">
+              Lats<span className="text-gray text-xl">Marbls</span>
             </h1>
             </div>
             <div className="justify-between items-center hidden md:flex">
@@ -144,8 +143,8 @@ const StickyNavbar = () => {
               alt="logo filled"
               className="w-6 h-6 opacity-100"
             ></img>
-            <h1 className="font-bold text-gray">
-              Marbls<span className="text-dgray text-xl">Lats</span>
+            <h1 className="font-bold text-dgray">
+              Lats<span className="text-gray text-xl">Marbls</span>
             </h1>
           </div>
         )}
