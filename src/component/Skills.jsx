@@ -27,22 +27,24 @@ const Skills = () => {
               <Skill name="CSS" level="80%" />
               <Skill name="Tailwind CSS" level="72%" />
               <Skill name="JavaScript" level="80%" />
-              <h1 className="text-white font-medium text-xl pt-3">
+              <h1 className="text-white font-medium text-xl pt-6">
                 Frontend Frameworks
               </h1>
-              <Skill name="React.js" level="65%" />
+              <Skill name="React.js" level="65%"/>
             </div>
           )}
 
           {currentPage === 2 && (
             <div className="flex flex-col h-[280px] lg:h-full animate-fadeIn">
-              <h1 className="text-white font-medium text-xl">
+              <Skill name="Next.js" level="50%" />
+              <h1 className="text-white font-medium text-xl pt-3">
                 Backend Framework
               </h1>
               <Skill name="Node.js" level="65%" />
               <Skill name="Express.js" level="65%" />
               <h1 className="text-white font-medium text-xl pt-3">Database</h1>
               <Skill name="MongoDB" level="60%" />
+              <Skill name="PostgreSQL" level="50%" />
             </div>
           )}
 
@@ -77,7 +79,7 @@ const Skills = () => {
           <h1 className="text-xl pt-5 md:px-2 md:pt-5 lg:pt-2 md:text-[24px] lg:text-3xl px-1 text-dgray font-bold">
             What can I bring?
           </h1>
-          <p className="text-gray pt-2 md:pt-4 md:px-2 pb-5 px-1">
+          <p className="text-gray mt-2 md:mt-4 md:px-2 px-1 flex flex-col tracking-tight">
             I am a passionate web developer with a solid foundation in HTML,
             CSS, JavaScript, and familiarity with React, MongoDB, and Tailwind
             CSS. My hands-on experience includes completing certifications in
@@ -86,7 +88,9 @@ const Skills = () => {
             skills. With a commitment to learning and a track record of adapting
             to new technologies, I am eager to contribute innovative, impactful
             solutions to your team while continuing to grow as a developer.
+            <span className="mt-5 font-bold text-dgray text-xl">Let's work together!</span>
           </p>
+          
         </div>
       </div>
     </section>
@@ -111,9 +115,11 @@ const Skill = ({ name, level }) => {
       "Tailwind CSS": "devicon-tailwindcss-plain",
       JavaScript: "devicon-javascript-plain",
       React: "devicon-react-original",
+      Next: "devicon-nextjs-plain",
       "Node.js": "devicon-nodejs-plain",
       "Express.js": "devicon-express-original",
       MongoDB: "devicon-mongodb-plain",
+      PostgreSQL: "devicon-postgresql-plain", 
     };
     return iconMap[name] || "devicon-devicon-plain";
   };

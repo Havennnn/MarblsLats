@@ -2,6 +2,7 @@ import React from "react";
 import mernAuth from "../assets/mernAuth.jpg";
 import storyWeaver from "../assets/storyWeaver.jpg";
 import curatorArt from "../assets/curatorArt.jpg";
+import saasLandingPage from "../assets/saasLandingPage.jpg";
 
 const Project = () => {
   return (
@@ -25,12 +26,14 @@ const Project = () => {
               />
               <div className="flex justify-between items-baseline mt-2">
                 <h3 className="text-xl font-semibold text-dgray">Login Auth</h3>
-                <a
-                  href="https://github.com/Havennnn/mern-auth"
-                  className="text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1"
-                >
-                  <i className="fa-solid fa-link"></i>View Project
-                </a>
+                <div className="flex items-center gap-2 text-lg">
+                  <a
+                    href="https://github.com/Havennnn/mern-auth"
+                    className="text-dgray flex items-center justify-center rounded-full"
+                  >
+                    <i className="fa-brands fa-github text-2xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+                  </a>
+                </div>
               </div>
               <p className="text-gray-500 text-sm mt-2">
                 A fully functional authentication system built using the MERN
@@ -38,24 +41,29 @@ const Project = () => {
                 password reset via a 6-digit OTP. react, node, express,tailwind
                 css, mongodb
               </p>
-              <div className="mt-4 flex flex-wrap gap-3 hover:cursor-default">
-                <span className="text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+              <p className="mt-5 text-sm font-medium">Technology Used:</p>
+              <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-react-original"></i>
                   React
                 </span>
-                <span className="text-sm border text-red-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                  <i class="devicon-vitejs-plain"></i>
+                  Vite
+                </span>
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-nodejs-plain"></i>
                   Node.js
                 </span>
-                <span className="text-sm border text-orange-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-express-original"></i>
                   Express.js
                 </span>
-                <span className="text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-tailwindcss-plain"></i>
                   TailwindCSS
                 </span>
-                <span className="text-sm border text-green-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-mongodb-plain"></i>
                   MongoDB
                 </span>
@@ -73,12 +81,14 @@ const Project = () => {
                 <h3 className="text-xl font-semibold text-dgray">
                   Story Weaver
                 </h3>
-                <a
-                  href="https://github.com/Havennnn/StoryWeaver"
-                  className="text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1"
-                >
-                  <i className="fa-solid fa-link"></i> View Project
-                </a>
+                <div className="flex items-center gap-2 text-lg">
+                  <a
+                    href="https://github.com/Havennnn/StoryWeaver"
+                    className="text-dgray flex items-center justify-center rounded-full"
+                  >
+                    <i className="fa-brands fa-github text-2xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+                  </a>
+                </div>
               </div>
               <p className="text-gray-500 text-sm mt-2">
                 A modern and dynamic storytelling platform built using React,
@@ -86,16 +96,21 @@ const Project = () => {
                 cutting-edge technology with creativity, integrating the Google
                 Generative AI API for crafting immersive narratives.
               </p>
-              <div className="mt-4 flex flex-wrap gap-3 hover:cursor-default">
-                <span className="text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+              <p className="mt-5 text-sm font-medium">Technology Used:</p>
+              <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-react-original"></i>
                   React
                 </span>
-                <span className="text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-tailwindcss-plain"></i>
                   TailwindCSS
                 </span>
-                <span className="text-sm border text-orange-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                  <i className="devicon-nodejs-plain"></i>
+                  Node.js
+                </span>
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-google-plain"></i>
                   Gemini API
                 </span>
@@ -111,30 +126,85 @@ const Project = () => {
               />
               <div className="flex justify-between items-baseline mt-2">
                 <h3 className="text-xl font-semibold text-dgray">CuratorArt</h3>
-                <a
-                  href="https://github.com/Havennnn/curatorArt"
-                  className="text-blue-500 hover:underline text-[12px] flex items-baseline justify-endg gap-1"
-                >
-                  <i className="fa-solid fa-link"></i> View Project
-                </a>
+                <div className="flex items-center gap-2 text-lg">
+                  <a
+                    href="https://github.com/Havennnn/curatorArt"
+                    className="text-dgray flex items-center justify-center rounded-full"
+                  >
+                    <i className="fa-brands fa-github text-2xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+                  </a>
+                </div>
               </div>
               <p className="text-gray-500 text-sm mt-2">
                 A sleek and responsive art curation platform designed using
                 React, Node.js, and Tailwind CSS. This website allows users to
                 explore through a clean and modern interface.
               </p>
-              <div className="mt-4 flex flex-wrap gap-3 hover:cursor-default">
-                <span className="text-sm border text-blue-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <p className="mt-5 text-sm font-medium">Technology Used:</p>
+                <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
+                  <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                    <i className="devicon-react-original"></i>
+                    React
+                  </span>
+                  <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                    <i className="devicon-tailwindcss-plain"></i>
+                    TailwindCSS
+                  </span>
+                  <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                    <i class="devicon-vitejs-plain"></i>
+                    Vite
+                  </span>
+                </div>
+            </div>
+
+            {/* Project Card 4 */}
+            <div className="shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out">
+              <img
+                src={saasLandingPage}
+                alt="page"
+                className="w-full rounded-[1.5rem] shadow-sm"
+              />
+              <div className="flex justify-between items-baseline mt-2">
+                <h3 className="text-xl font-semibold text-dgray">
+                  Saas Landing Page
+                </h3>
+                <div className="flex items-center gap-2 text-lg text-dgray">
+                  <a
+                    href="https://lightsaas-landingpage-tau.vercel.app"
+                    className="flex items-center justify-center"
+                  >
+                    <i className="fa-brands fa-github text-2xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+                  </a>
+                  <a
+                    href="https://lightsaas-landingpage-tau.vercel.app"
+                    className="flex items-center justify-center"
+                  >
+                    <i className="fa-solid fa-globe text-2xl hover:cursor-pointer hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+                  </a>
+                </div>
+              </div>
+              <p className="text-gray-500 text-sm mt-2">
+                A modern landing page designed using React, Framer, and Tailwind
+                CSS. This website allows users to explore through a clean and
+                modern interface.
+              </p>
+              <p className="mt-5 text-sm font-medium">Technology Used:</p>
+              <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-react-original"></i>
                   React
                 </span>
-                <span className="text-sm border text-red-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
-                  <i className="devicon-nodejs-plain"></i>
-                  Node.js
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                  <i class="devicon-nextjs-original-wordmark"></i>
+                  Next
                 </span>
-                <span className="text-sm border text-purple-500 rounded-full px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
                   <i className="devicon-tailwindcss-plain"></i>
                   TailwindCSS
+                </span>
+                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                  <i className="devicon-framermotion-original"></i>
+                  Framer Motion
                 </span>
               </div>
             </div>

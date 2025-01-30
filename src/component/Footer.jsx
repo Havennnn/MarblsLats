@@ -1,105 +1,110 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Logo from "../assets/Logo.svg";
 
 const Footer = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!navbarRef.current || !placeholderRef.current) return;
+
+      const navbarTop = placeholderRef.current.getBoundingClientRect().top;
+
+      if (navbarTop <= 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId, offset = 20) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: sectionTop - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <footer className="bg-dgray text-white py-8 mt-16">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Contact Section */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Contact</h3>
-            <ul className="flex flex-col">
-              <li className="mb-2">
-                <i className="fas fa-envelope"></i>{" "}
-                <a
-                  href="mailto:your.email@example.com"
-                  className="hover:underline"
-                >
-                  marablelatrell@gmail.com
-                </a>
-              </li>
-              <li className="mb-2">
-                <i className="fas fa-phone-alt"></i>{" "}
-                <a href="tel:+1234567890" className="hover:underline">
-                  0995-332-4941
-                </a>
-              </li>
-              <li className="mb-2">
-                <i className="fas fa-map-marker-alt"></i> Taytay, Rizal
-              </li>
-            </ul>
-          </div>
+    <footer className="bg-dgray text-white mt-10 flex flex-col items-center justify-center">
+      <img src={Logo} alt="logo" className="w-8 h-8" />
+      <div className="flex justify-center items-center flex-col mt-10 text-sm">
+        <ul className="flex gap-1 text-white transition-all">
+          <li
+            onClick={() => scrollToSection("home")}
+            className="px-3 flex items-center cursor-pointer"
+          >
+            Home
+          </li>
+          <li
+            onClick={() => scrollToSection("skills")}
+            className="px-3 flex items-center cursor-pointer"
+          >
+            Skills
+          </li>
+          <li
+            onClick={() => scrollToSection("contact")}
+            className="px-3 flex items-center cursor-pointer"
+          >
+            Contact
+          </li>
+          <li
+            onClick={() => scrollToSection("projects")}
+            className="px-3 flex items-center cursor-pointer"
+          >
+            Projects
+          </li>
+        </ul>
 
-          {/* Social Media Section */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
-            <ul className="flex gap-6">
-              <li>
-                <a
-                  href="https://github.com/Havennnn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-brands fa-square-github text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/latrell-marable-b43a37256/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-brands fa-linkedin text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/latrell.r.marable"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-brands fa-square-facebook text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/lancrms/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-brands fa-square-instagram text-3xl text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Links Section */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <ul>
-              <li className="mb-2">
-                <a href="#home" className="hover:underline">
-                  Home
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#skills" className="hover:underline">
-                  Skills
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#contact" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#projects" className="hover:underline">
-                  Project
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="mt-4">
+          <ul className="flex gap-5 text-2xl">
+            <li className="flex animate-fadeIn">
+              <a
+                href="https://github.com/Havennnn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-square-github text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+              </a>
+            </li>
+            <li className="flex animate-fadeIn">
+              <a
+                href="https://www.linkedin.com/in/latrell-marable-b43a37256/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-linkedin text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+              </a>
+            </li>
+            <li className="flex animate-fadeIn">
+              <a
+                href="https://www.facebook.com/latrell.r.marable"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-square-facebook text-white hover:transform hover:scale-110 transition duration-300 ease-in-outs"></i>
+              </a>
+            </li>
+            <li className="flex animate-fadeIn">
+              <a
+                href="https://www.instagram.com/lancrms/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-square-instagram text-white hover:transform hover:scale-110 transition duration-300 ease-in-out"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <h2 className="mt-4 pb-10 text-[12px]">
+          ©LatsMarbls, All rights and reserve.
+        </h2>
       </div>
     </footer>
   );
