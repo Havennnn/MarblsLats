@@ -48,7 +48,7 @@ const Project = () => {
                   React
                 </span>
                 <span className="text-sm flex gap-1 justify-center items-center">
-                  <i class="devicon-vitejs-plain"></i>
+                  <i className="devicon-vitejs-plain"></i>
                   Vite
                 </span>
                 <span className="text-sm px-3 flex gap-1 justify-center items-center">
@@ -103,7 +103,7 @@ const Project = () => {
                   React
                 </span>
                 <span className="text-sm flex gap-1 justify-center items-center">
-                  <i class="devicon-vitejs-plain"></i>
+                  <i className="devicon-vitejs-plain"></i>
                   Vite
                 </span>
                 <span className="text-sm flex gap-1 justify-center items-center">
@@ -151,7 +151,7 @@ const Project = () => {
                     React
                   </span>
                   <span className="text-sm flex gap-1 justify-center items-center">
-                    <i class="devicon-vitejs-plain"></i>
+                    <i className="devicon-vitejs-plain"></i>
                     Vite
                   </span>
                   <span className="text-sm flex gap-1 justify-center items-center">
@@ -199,7 +199,7 @@ const Project = () => {
                   React
                 </span>
                 <span className="text-sm flex gap-1 justify-center items-center">
-                  <i class="devicon-nextjs-plain"></i>
+                  <i className="devicon-nextjs-plain"></i>
                   Next
                 </span>
                 <span className="text-sm flex gap-1 justify-center items-center">
