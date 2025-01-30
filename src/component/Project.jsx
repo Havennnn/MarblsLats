@@ -42,28 +42,28 @@ const Project = () => {
                 css, mongodb
               </p>
               <p className="mt-5 text-sm font-medium">Technology Used:</p>
-              <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+              <div className="mt-3 flex justify-center flex-wrap gap-5 hover:cursor-default text-dgray">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-react-original"></i>
                   React
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i class="devicon-vitejs-plain"></i>
                   Vite
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm px-3 flex gap-1 justify-center items-center">
                   <i className="devicon-nodejs-plain"></i>
                   Node.js
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-express-original"></i>
                   Express.js
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-tailwindcss-plain"></i>
                   TailwindCSS
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-mongodb-plain"></i>
                   MongoDB
                 </span>
@@ -97,20 +97,20 @@ const Project = () => {
                 Generative AI API for crafting immersive narratives.
               </p>
               <p className="mt-5 text-sm font-medium">Technology Used:</p>
-              <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+              <div className="mt-3 flex justify-center flex-wrap gap-5 hover:cursor-default text-dgray">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-react-original"></i>
                   React
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-tailwindcss-plain"></i>
                   TailwindCSS
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-nodejs-plain"></i>
                   Node.js
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-google-plain"></i>
                   Gemini API
                 </span>
@@ -141,16 +141,16 @@ const Project = () => {
                 explore through a clean and modern interface.
               </p>
                 <p className="mt-5 text-sm font-medium">Technology Used:</p>
-                <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
-                  <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <div className="mt-3 flex justify-center flex-wrap gap-5 hover:cursor-default text-dgray">
+                  <span className="text-sm flex gap-1 justify-center items-center">
                     <i className="devicon-react-original"></i>
                     React
                   </span>
-                  <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                  <span className="text-sm flex gap-1 justify-center items-center">
                     <i className="devicon-tailwindcss-plain"></i>
                     TailwindCSS
                   </span>
-                  <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                  <span className="text-sm flex gap-1 justify-center items-center">
                     <i class="devicon-vitejs-plain"></i>
                     Vite
                   </span>
@@ -189,20 +189,20 @@ const Project = () => {
                 modern interface.
               </p>
               <p className="mt-5 text-sm font-medium">Technology Used:</p>
-              <div className="flex justify-center flex-wrap gap-3 hover:cursor-default text-dgray">
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+              <div className="mt-3 flex justify-center flex-wrap gap-5 hover:cursor-default text-dgray">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-react-original"></i>
                   React
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
-                  <i class="devicon-nextjs-original-wordmark"></i>
+                <span className="text-sm flex gap-1 justify-center items-center">
+                  <i class="devicon-nextjs-plain"></i>
                   Next
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-tailwindcss-plain"></i>
                   TailwindCSS
                 </span>
-                <span className="text-sm px-3 py-1 flex gap-1 justify-center items-center">
+                <span className="text-sm flex gap-1 justify-center items-center">
                   <i className="devicon-framermotion-original"></i>
                   Framer Motion
                 </span>
