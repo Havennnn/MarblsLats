@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "../assets/Logo.svg"
+import LogoF from "../assets/LogoFilled.svg"
 
 const Preloader = () => {
   return (
@@ -20,7 +22,7 @@ const Preloader = () => {
         ></motion.div>
       </motion.div>
       <motion.img
-        src="../assets/Logo.svg"
+        src={Logo}
         alt="Loading"
         className="absolute h-8 w-8 lg:h-12 lg:w-12"
         initial={{ opacity: 0 }}
@@ -43,7 +45,7 @@ const WelcomeScreen = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="text-dgray font-bold flex justify-center items-center gap-2"
         >
-          <img src="../assets/LogoFilled.svg" className="w-6 h-6 md:h-8 md:w-8"/>
+          <img src={LogoF} className="w-6 h-6 md:h-8 md:w-8"/>
           <p className="text-xl md:text-3xl">
             Lats<span className="text-2xl md:text-4xl text-gray">Marbls</span>
           </p>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import LogoF from "../assets/LogoFilled.svg"
 
 const StickyNavbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -54,7 +55,7 @@ const StickyNavbar = () => {
           <>
           <div className="flex gap-1 items-center justify-center">
             <img
-              src="/LogoFilled.svg"
+              src={LogoF}
               alt="logo"
               className="w-6 h-6 opacity-100"
             />
@@ -138,7 +139,7 @@ const StickyNavbar = () => {
         ) : (
           <div className="flex gap-2 items-center justify-center">
             <img
-              src="/LogoFilled.svg"
+              src={LogoF}
               alt="logo filled"
               className="w-6 h-6 opacity-100"
             />

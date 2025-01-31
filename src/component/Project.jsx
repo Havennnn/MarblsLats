@@ -1,4 +1,8 @@
 import React from "react";
+import login from "../assets/mernAuth.jpg"
+import story from "../assets/storyWeaver.jpg"
+import curator from "../assets/curatorArt.jpg"
+import saas from "../assets/saasLandingPage.jpg"
 
 const Project = () => {
   return (
@@ -16,7 +20,7 @@ const Project = () => {
             {/* Project Card 1 */}
             <div className="shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out">
               <img
-                src="../assets/mernAuth.jpg"
+                src={login}
                 alt="page"
                 className="w-full rounded-[1.5rem] shadow-sm"
               />
@@ -69,7 +73,7 @@ const Project = () => {
             {/* Project Card 2 */}
             <div className="shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out">
               <img
-                src="../assets/storyWeaver.jpg"
+                src={story}
                 alt="page"
                 className="w-full rounded-[1.5rem] shadow-sm"
               />
@@ -126,7 +130,7 @@ const Project = () => {
             {/* Project Card 3 */}
             <div className="shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out">
               <img
-                src="../assets/curatorArt.jpg"
+                src={curator}
                 alt="page"
                 className="w-full rounded-[1.5rem] shadow-sm"
               />
@@ -166,7 +170,7 @@ const Project = () => {
             {/* Project Card 4 */}
             <div className="shadow-xl rounded-[1.5rem] p-6 hover:transform hover:scale-105 transition duration-300 ease-in-out">
               <img
-                src="../assets/saasLandingPage.jpg"
+                src={saas}
                 alt="page"
                 className="w-full rounded-[1.5rem] shadow-sm"
               />

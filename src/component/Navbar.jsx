@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { motion } from "framer-motion";
+import Logo from "../assets/LogoFilled.svg"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,7 +53,7 @@ const Navbar = () => {
           variants={slideIn}
           className="font-semibold py-2 text-gray px-6 sm:px-14 text-shadow flex justify-center items-center gap-2"
         >
-          <img src="../assets/LogoFilled.svg" alt="logoFilled" className="h-8 w-8" />
+          <img src={Logo} alt="logoFilled" className="h-8 w-8" />
           <p className="text-xl text-dgray font-semibold">
             Lats
             <span className="font-semibold text-2xl text-gray">Marbls</span>
@@ -112,7 +113,7 @@ const Navbar = () => {
             variants={slideIn}
             className="px-14 text-shadow flex justify-center items-center gap-2"
           >
-            <img src="../assets/LogoFilled.svg" alt="logoFilled" className="h-8 w-8" />
+            <img src={Logo} alt="logoFilled" className="h-8 w-8" />
             <p className="font-semibold text-2xl text-dgray">
               Lats
               <span className="font-semibold text-3xl text-gray">Marbls</span>

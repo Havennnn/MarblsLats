@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
+import right from "../assets/rightIcon.svg"
+import left from "../assets/leftIcon.svg"
 
 const Skills = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,7 +57,7 @@ const Skills = () => {
               }`}
               disabled={currentPage === 1}
             >
-              <img src="../assets/leftIcon.svg" className="w-3 h-3" />
+              <img src={left} className="w-3 h-3" />
             </button>
 
             <button
@@ -65,7 +67,7 @@ const Skills = () => {
               }`}
               disabled={currentPage === 2}
             >
-              <img src="../assets/rightIcon.svg" className="w-3 h-3" />
+              <img src={right} className="w-3 h-3" />
             </button>
           </div>
         </div>
