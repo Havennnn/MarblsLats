@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Logo from "../assets/Logo.svg";
 
 const Footer = () => {
   useEffect(() => {
@@ -32,7 +31,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-dgray text-white mt-10 flex flex-col items-center justify-center">
-      <img src={Logo} alt="logo" className="w-8 h-8" />
+      <img src="../assets/Logo.svg" alt="logo" className="w-8 h-8" />
       <div className="flex justify-center items-center flex-col mt-10 text-sm">
         <ul className="flex gap-1 text-white transition-all">
           <li

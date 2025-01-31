@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import logoFilled from "../assets/LogoFilled.svg";
 
 const StickyNavbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -55,10 +54,10 @@ const StickyNavbar = () => {
           <>
           <div className="flex gap-1 items-center justify-center">
             <img
-              src={logoFilled}
+              src="/LogoFilled.svg"
               alt="logo"
               className="w-6 h-6 opacity-100"
-            ></img>
+            />
             <h1 className="font-bold text-dgray hidden md:block">
               Lats<span className="text-gray text-xl">Marbls</span>
             </h1>
@@ -139,10 +138,10 @@ const StickyNavbar = () => {
         ) : (
           <div className="flex gap-2 items-center justify-center">
             <img
-              src={logoFilled}
+              src="/LogoFilled.svg"
               alt="logo filled"
               className="w-6 h-6 opacity-100"
-            ></img>
+            />
             <h1 className="font-bold text-dgray">
               Lats<span className="text-gray text-xl">Marbls</span>
             </h1>

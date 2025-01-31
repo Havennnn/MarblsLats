@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom"; // Import HashRouter
 import Navbar from "./component/Navbar.jsx";
 import Home from "./component/Home.jsx";
 import Skills from "./component/Skills.jsx";
@@ -17,11 +17,11 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       {loading ? (
         <Preloader />
       ) : (
@@ -46,7 +46,7 @@ const App = () => {
           <Footer />
         </div>
       )}
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

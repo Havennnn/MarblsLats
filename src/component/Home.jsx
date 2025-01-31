@@ -13,7 +13,7 @@ const Home = () => {
   const DownloadCV = () => {
     const link = document.createElement("a");
     link.href = cv;
-    link.download = "MarableLatrell_CV.pdf";
+    link.download = "MarableLatrell_OJT_Resume.pdf";
     link.click();
   };
 
